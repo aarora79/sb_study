@@ -38,13 +38,13 @@ def visualize_data():
 def main(argv):
     #intiialize logger so that we can see the traces
     try:
-        glob.lg = logger.init(glob.NAME_FOR_LOGGER)
+        glob.log = logger.init(glob.NAME_FOR_LOGGER)
     except Exception as e:
         print('failed to initialize logger, exception: ' + str(e))
         print('EXITING..')
         sys.exit(1)    
     #logging initialize, no ready to start the data science pipeline
-    glob.lg.info('begin SB study\n')
+    glob.log.info('begin SB study\n')
     
     #initialize the 'wb' module which is a submodule for everything we want to
     #do with the world bank data and then do the same for the 'sb' module
@@ -62,7 +62,7 @@ def main(argv):
     visualize_data()    
     
     #Further steps are currently TBD
-    glob.lg.info('all done, existing...')
+    glob.log.info('all done, existing...')
                
 if __name__ == "__main__":
     # execute only if run as a script

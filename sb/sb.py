@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 import requests as req
 import pandas as pd
+import json
+
+import check_quality as cq
 
 from common import globals as glob
 
 def get_data():
-    glob.lg.info('about to get SB data...')
+    glob.log.info('about to get SB data...')
     df = None
     
     # Starbucks store location data is available from https://opendata.socrata.com via an API. 
@@ -16,33 +19,37 @@ def get_data():
     
     #if the return code is not 200 ok then its an errors
     if r.ok != True:
-        glob.lg.error('Error while retrieving information about SB, server sent status code ' + str(r.status_code))
-        glob.lg.error('Here is everything that was sent by the server...')
-        glob.lg.error(r.text)
+        glob.log.error('Error while retrieving information about SB, server sent status code ' + str(r.status_code))
+        glob.log.error('Here is everything that was sent by the server...')
+        glob.log.error(r.text)
     else:            
         #looks like we got the response
-        glob.lg.info('successfully received a response from the SB API endpoint ' + api)
+        glob.log.info('successfully received a response from the SB API endpoint ' + api)
         
         #Store the response in a dataframe
         df = pd.DataFrame(r.json())
         
         #lets see what the dataframe looks like
-        glob.lg.info('shape of the dataframe: ' + str(df.shape))
-        glob.lg.info('the dataframe contains the following columns ' + str(df.columns))
+        glob.log.info('columns in the data frame -> ' + str(df.columns))
+        glob.log.info('the dataframe contains %d rows and %d columns' %(df.shape[0], df.shape[1]))
         
     return df
 
 def check_quality_of_data(df):
-    glob.lg.info('about to get SB data...')
+    glob.log.info('about to check quality of SB data...')
+    
+    #overall quality metrics
+    qual = cq.check(df)
+    glob.log.info(json.dumps(qual, indent=glob.INDENT_LEVEL))
     
 def clean_data(df):
-    glob.lg.info('about to clean data...')
+    glob.log.info('about to clean data...')
 
 def visualize_data(df):
-    glob.lg.info('about to visualize SB data...')
+    glob.log.info('about to visualize SB data...')
 
 
 def init():
     #nothing for now
-    glob.lg.info('SB module init complete')
+    glob.log.info('SB module init complete')
 
