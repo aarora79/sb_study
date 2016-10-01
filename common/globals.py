@@ -24,3 +24,9 @@ PRECISION    = 6 #for printing floating point numbers
 
 #CSV file containing country codes, used for validation
 CONTRY_CODE_CSV = 'data.csv'
+
+#World Bandk development indicators, selected, stored in a csv file
+WDI_FILE_NAME = 'WDI_Series.csv'
+WB_API_ENDPOINT = 'http://api.worldbank.org/countries/ALL/indicators/'
+WB_API_SUFFIX   = '?date=2015&format=json&per_page=10000' #get all data for 2015
+                                                          #that is the newest available data

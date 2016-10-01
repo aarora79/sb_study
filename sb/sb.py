@@ -40,7 +40,9 @@ def check_quality_of_data(df):
     
     #overall quality metrics
     qual = cq.check(df)
+    glob.log.info('======= quality metrics for starbucks data ============')
     glob.log.info(json.dumps(qual, indent=glob.INDENT_LEVEL))
+    glob.log.info('=======================================================')
     
 def clean_data(df):
     glob.log.info('about to clean data...')

@@ -19,6 +19,7 @@ def store_in_dict(d, k, key1, val1, key2, val2):
     d[k][key2] = val2
     
 def check_missing(qual, df):
+    glob.log.info('checking missing data...')
     qual['missing_data'] = {}
     
     #check missing fraction of missing rows in each column and also overall
@@ -64,6 +65,7 @@ def check_missing(qual, df):
     return qual
 
 def check_store_id(qual, df):
+    glob.log.info('checking store_id uniqueness...')
     #all store id's that are unique are correct, all others are considered invalid
     num_uniq = len(df['store_id'].unique())
     total    = len(df['store_id'])
@@ -76,6 +78,7 @@ def check_store_id(qual, df):
     return num_non_unique
 
 def check_lat_long(qual, df):
+    glob.log.info('checking lat/long values...')
     #find stores with invalid latitude or longitude values
     #valid latitude is >=-90 to <=90 and valid longitude >=-180 and <=180
     invalid_lat_long_count = 0
@@ -95,6 +98,7 @@ def check_lat_long(qual, df):
     return invalid_lat_long_count
 
 def check_timezone(qual, df):
+    glob.log.info('checking timezone offsets...')
     #find stores with invalid timezone values
     #valid timezones have offset which are multiple of 15 see https://en.wikipedia.org/wiki/UTC_offset
 
@@ -116,6 +120,7 @@ def check_timezone(qual, df):
 def check_country_code(qual, df):
     #lookup the country codes via a csv file obtained from 
     #https://raw.githubusercontent.com/datasets/country-list/master/data.csv
+    glob.log.info('checking country codes...')
     cc_df = pd.read_csv(glob.CONTRY_CODE_CSV)
     num_invalid_cc = 0
     for i in range(len(df)):
@@ -136,6 +141,7 @@ def check_country_code(qual, df):
     
                                                         
 def check_invalid(qual, df):
+    glob.log.info('begin checks for invalid data...')
     #we can do a bunch of checks here....
     #1. store_id has to be unique, obviously.
     #2. lat/long have to be valid.
