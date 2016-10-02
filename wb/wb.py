@@ -6,6 +6,7 @@ import json
 import csv
 
 from common import globals as glob
+from common import utils
 
 def get_wdi_data(wdi, wdi_data):
     
@@ -39,10 +40,11 @@ def get_wdi_data(wdi, wdi_data):
             if pd.notnull(elem['value']):
                 wdi_data[id][wdi] = float(elem['value']) #everything we are intrested in is a number
             else:
-                wdi_data[id][wdi] = np.nan
+                wdi_data[id][wdi] = ''
                 
         #lets see what the dataframe looks like
         glob.log.info('got info for %d countries for indicator %s and stored it ' %(num_elems, wdi))
+        
         
 def get_data():
     glob.log.info('about to get WB data...')
@@ -69,9 +71,10 @@ def get_data():
     for wdi in wdi_names:
         get_wdi_data(wdi, wdi_data)
         
-    glob.log.info('======= World Bank data ============')
-    glob.log.info(json.dumps(wdi_data, indent=glob.INDENT_LEVEL))
-    glob.log.info('=======================================================')
+    glob.log.info('WB data downloaded, going to save it into ' + glob.WDI_CSV_FILE)
+    #glob.log.info(json.dumps(wdi_data, indent=glob.INDENT_LEVEL))
+    #dump the dictionary into a csv file
+    utils.write_dict_to_csv(wdi_data, glob.WDI_CSV_FILE)
     return df
 
 def check_quality_of_data(df):

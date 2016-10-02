@@ -2,6 +2,7 @@
 import requests as req
 import pandas as pd
 import json
+import os
 
 import check_quality as cq
 
@@ -32,6 +33,10 @@ def get_data():
         #lets see what the dataframe looks like
         glob.log.info('columns in the data frame -> ' + str(df.columns))
         glob.log.info('the dataframe contains %d rows and %d columns' %(df.shape[0], df.shape[1]))
+        
+        #save the dataframe to a CSV
+        fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.SB_CSV_FILE)
+        df.to_csv(fname, encoding='utf-8')
         
     return df
 

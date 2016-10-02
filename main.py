@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import sys
+import os
 
 from common import logger
 from common import globals as glob
@@ -46,6 +47,17 @@ def main(argv):
     #logging initialize, no ready to start the data science pipeline
     glob.log.info('begin SB study\n')
     
+    #create output folder before anything else
+    output_dir = glob.OUTPUT_DIR_NAME
+    try:
+        #create if not present
+        if os.path.isdir(output_dir) == False:
+            os.mkdir(output_dir)
+    except Exception as e:
+        glob.log.error('Exception occured while creating ' + output_dir + ', EXITING...')
+        glob.log.error(str(e))
+        sys.exit(1)
+        
     #initialize the 'wb' module which is a submodule for everything we want to
     #do with the world bank data and then do the same for the 'sb' module
     wb.init()
