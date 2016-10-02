@@ -2,6 +2,12 @@
 import os
 #global variables used across modules
 
+__VERSION__      = '0.1'
+__AUTHOR__       = 'Amit Arora'
+__AUTHOR_EMAIL__ = 'aa1603@georgetown.edu'
+__PROJECT_NAME_SHORT__ = 'SBS' #Starbucks Study
+__PROJECT_NAME_LONG__ = 'A data science tale about a coffee company'
+
 #folder for storing all the output data
 OUTPUT_DIR_NAME = os.path.join('.', 'output')
 
@@ -21,6 +27,11 @@ STARBUCKS_API_ENDPOINT = 'https://opendata.socrata.com/resource/xy4y-c4mk.json'
 SOCRATA_LIMIT_PER_API_CALL = 50000 #as per the documentation, this is the limit
                                    #of the number of records per call
 SB_CSV_FILE = 'SB_data_as_downloaded.csv'  #csv file containing data as downloaded
+SB_CSV_FILE_W_FEATURES = 'SB_data_w_features.csv' #csv file with new features added
+
+#country to continent mapping
+COUNTRY_TO_CONTINENT_MAPPING_API = 'https://commondatastorage.googleapis.com/ckannet-storage/2012-07-26T090250/Countries-Continents-csv.csv'
+COUNTRY_CONTINENET_CSV = 'countries.csv'
 
 #indentation level for pretty printing dictionaries
 INDENT_LEVEL = 2

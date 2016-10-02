@@ -27,6 +27,15 @@ def clean_data():
     
     #clean SB data
     glob.sb['df'] = sb.clean_data(glob.sb['df'])
+
+def create_features():
+    #feature creation for WB data
+    glob.wb['df'] = wb.create_features(glob.wb['df'])
+
+    #feature creation for SB data, feature creation for SB is the real thing
+    #because that ultimately feeds into our problem statement, WB data is a helper
+    #data which will be joined with the SB data in future phases of this project
+    glob.sb['df'] = sb.create_features(glob.sb['df'])    
     
 def visualize_data():
     #visualize WB data
@@ -35,6 +44,11 @@ def visualize_data():
     #visualize SB data
     sb.clean_data(glob.sb['df'])
     
+def print_banner():
+    glob.log.info('-------------------------------------------------------------------------')
+    glob.log.info('%s v%s: %s' %(glob.__PROJECT_NAME_SHORT__, glob.__VERSION__, glob.__PROJECT_NAME_LONG__))  
+    glob.log.info('Author: %s, %s' %(glob.__AUTHOR__, glob.__AUTHOR_EMAIL__))
+    glob.log.info('-------------------------------------------------------------------------')
     
 def main(argv):
     #intiialize logger so that we can see the traces
@@ -45,7 +59,8 @@ def main(argv):
         print('EXITING..')
         sys.exit(1)    
     #logging initialize, no ready to start the data science pipeline
-    glob.log.info('begin SB study\n')
+    print_banner()    
+    glob.log.info('Begin SB study, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
     
     #create output folder before anything else
     output_dir = glob.OUTPUT_DIR_NAME
@@ -69,6 +84,9 @@ def main(argv):
     #Step 2: evaluate and clean the data
     check_quality_of_data()
     clean_data()
+    
+    #step 2.5 feature creation
+    create_features()
     
     #Step 3: some basic visualizations
     visualize_data()    

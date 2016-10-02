@@ -93,10 +93,15 @@ def check_quality_of_data(df):
     glob.log.info('======= quality metrics for WB data ============')
     glob.log.info(json.dumps(qual, indent=glob.INDENT_LEVEL))
     glob.log.info('=======================================================')
+    return qual
     
 def clean_data(df):
     glob.log.info('about to clean data...')
+    return df
 
+def create_features(df):
+    glob.log.info('about to create features ...')
+    
 def visualize_data(df):
     glob.log.info('about to visualize WB data...')
 

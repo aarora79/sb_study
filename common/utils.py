@@ -154,9 +154,9 @@ def write_dict_to_csv(dict, fname):
             d = dict[k]
             line = encode_str_in_csv(line, k) #country code
             key_count = 0
-            glob.log.info('country '  + line)
+            
             for k2 in d.keys():
-                #glob.log.info(k2 + ' '  + str(d[k2]))
+                
                 val = d[k2]
                 if k2 != 'name': #name key already holds a string   
                     val = str(val)
