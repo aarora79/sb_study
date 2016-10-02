@@ -1,0 +1,1626 @@
+10-02 12:52:32,SBS,main.py:48,INFO, begin SB study
+
+10-02 12:52:32,SBS,wb.py:106,INFO, WB module init complete
+10-02 12:52:32,SBS,sb.py:61,INFO, SB module init complete
+10-02 12:52:32,SBS,wb.py:51,INFO, about to get WB data...
+10-02 12:52:32,SBS,wb.py:69,INFO, total number of indicators 82
+10-02 12:52:32,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/AG.LND.TOTL.RU.K2?date=2015&format=json&per_page=10000
+10-02 12:52:32,SBS,wb.py:47,INFO, got info for 264 countries for indicator AG.LND.TOTL.RU.K2 and stored it 
+10-02 12:52:32,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/AG.LND.TOTL.UR.K2?date=2015&format=json&per_page=10000
+10-02 12:52:32,SBS,wb.py:47,INFO, got info for 264 countries for indicator AG.LND.TOTL.UR.K2 and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/BG.GSR.NFSV.GD.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator BG.GSR.NFSV.GD.ZS and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/BX.KLT.DINV.WD.GD.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator BX.KLT.DINV.WD.GD.ZS and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/CM.MKT.TRAD.CD?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator CM.MKT.TRAD.CD and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/CM.MKT.TRAD.GD.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator CM.MKT.TRAD.GD.ZS and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/DT.DOD.PVLX.GN.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator DT.DOD.PVLX.GN.ZS and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/DT.ODA.ODAT.PC.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator DT.ODA.ODAT.PC.ZS and stored it 
+10-02 12:52:33,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EG.ELC.ACCS.UR.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:33,SBS,wb.py:47,INFO, got info for 264 countries for indicator EG.ELC.ACCS.UR.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EG.ELC.ACCS.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EG.ELC.ACCS.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EG.ELC.RNEW.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EG.ELC.RNEW.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EN.ATM.CO2E.EG.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EN.ATM.CO2E.EG.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EN.ATM.PM25.MC.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EN.ATM.PM25.MC.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EN.CLC.MDAT.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EN.CLC.MDAT.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EN.POP.SLUM.UR.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EN.POP.SLUM.UR.ZS and stored it 
+10-02 12:52:34,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/EN.URB.LCTY.UR.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:34,SBS,wb.py:47,INFO, got info for 264 countries for indicator EN.URB.LCTY.UR.ZS and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/FB.ATM.TOTL.P5?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator FB.ATM.TOTL.P5 and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/FI.RES.TOTL.DT.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator FI.RES.TOTL.DT.ZS and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/NY.GNP.PCAP.CD?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator NY.GNP.PCAP.CD and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/FP.CPI.TOTL.ZG?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator FP.CPI.TOTL.ZG and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.BUS.DISC.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.BUS.DISC.XQ and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.BUS.EASE.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.BUS.EASE.XQ and stored it 
+10-02 12:52:35,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.BUS.NDNS.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:35,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.BUS.NDNS.ZS and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.CUS.DURS.EX?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.CUS.DURS.EX and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.ELC.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.ELC.DURS and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.ELC.OUTG?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.ELC.OUTG and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.ELC.TIME?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.ELC.TIME and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.EXP.COST.CD?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.EXP.COST.CD and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.FRM.BRIB.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.FRM.BRIB.ZS and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.FRM.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.FRM.DURS and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.FRM.ISOC.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.FRM.ISOC.ZS and stored it 
+10-02 12:52:36,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.GOV.DURS.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:36,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.GOV.DURS.ZS and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.IMP.COST.CD?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.IMP.COST.CD and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.IMP.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.IMP.DURS and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.ISV.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.ISV.DURS and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.LGL.CRED.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.LGL.CRED.XQ and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.REG.COST.PC.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.REG.COST.PC.ZS and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.REG.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.REG.DURS and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.REG.PROC?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.REG.PROC and stored it 
+10-02 12:52:37,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.TAX.GIFT.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:37,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.TAX.GIFT.ZS and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.TAX.LABR.CP.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.TAX.LABR.CP.ZS and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.TAX.METG?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.TAX.METG and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.TAX.OTHR.CP.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.TAX.OTHR.CP.ZS and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.TAX.TOTL.CP.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.TAX.TOTL.CP.ZS and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IC.WRH.DURS?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IC.WRH.DURS and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IQ.WEF.CUST.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IQ.WEF.CUST.XQ and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IQ.WEF.PORT.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IQ.WEF.PORT.XQ and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IT.CEL.SETS.P2?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IT.CEL.SETS.P2 and stored it 
+10-02 12:52:38,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/IT.NET.USER.P2?date=2015&format=json&per_page=10000
+10-02 12:52:38,SBS,wb.py:47,INFO, got info for 264 countries for indicator IT.NET.USER.P2 and stored it 
+10-02 12:52:39,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/LP.LPI.OVRL.XQ?date=2015&format=json&per_page=10000
+10-02 12:52:39,SBS,wb.py:47,INFO, got info for 264 countries for indicator LP.LPI.OVRL.XQ and stored it 
+10-02 12:52:39,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/NE.CON.PETC.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:39,SBS,wb.py:47,INFO, got info for 264 countries for indicator NE.CON.PETC.ZS and stored it 
+10-02 12:52:39,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/NE.CON.PRVT.KD.ZG?date=2015&format=json&per_page=10000
+10-02 12:52:39,SBS,wb.py:47,INFO, got info for 264 countries for indicator NE.CON.PRVT.KD.ZG and stored it 
+10-02 12:52:39,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/NE.CON.PRVT.PC.KD.ZG?date=2015&format=json&per_page=10000
+10-02 12:52:39,SBS,wb.py:47,INFO, got info for 264 countries for indicator NE.CON.PRVT.PC.KD.ZG and stored it 
+10-02 12:52:39,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SE.ADT.LITR.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:39,SBS,wb.py:47,INFO, got info for 264 countries for indicator SE.ADT.LITR.ZS and stored it 
+10-02 12:52:41,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SH.H2O.SAFE.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:41,SBS,wb.py:47,INFO, got info for 264 countries for indicator SH.H2O.SAFE.ZS and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SH.STA.ACSN.UR?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SH.STA.ACSN.UR and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SI.POV.2DAY?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SI.POV.2DAY and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SI.POV.GINI?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SI.POV.GINI and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.1524.SP.FE.NE.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.1524.SP.FE.NE.ZS and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.MPYR.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.MPYR.ZS and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.SELF.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.SELF.ZS and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.TOTL.SP.FE.NE.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.TOTL.SP.FE.NE.ZS and stored it 
+10-02 12:52:42,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.TOTL.SP.MA.NE.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:42,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.TOTL.SP.MA.NE.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.EMP.WORK.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.EMP.WORK.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.GDP.PCAP.EM.KD?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.GDP.PCAP.EM.KD and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.IND.EMPL.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.IND.EMPL.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.ISV.IFRM.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.ISV.IFRM.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.SRV.EMPL.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.SRV.EMPL.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.TLF.ACTI.1524.NE.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.TLF.ACTI.1524.NE.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.TLF.PART.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.TLF.PART.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SL.UEM.NEET.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SL.UEM.NEET.ZS and stored it 
+10-02 12:52:43,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SP.POP.1564.TO.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:43,SBS,wb.py:47,INFO, got info for 264 countries for indicator SP.POP.1564.TO.ZS and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SP.POP.TOTL?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator SP.POP.TOTL and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SP.URB.GROW?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator SP.URB.GROW and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/SP.URB.TOTL.IN.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator SP.URB.TOTL.IN.ZS and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/ST.INT.ARVL?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator ST.INT.ARVL and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/ST.INT.RCPT.XP.ZS?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator ST.INT.RCPT.XP.ZS and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/TX.VAL.OTHR.ZS.WT?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator TX.VAL.OTHR.ZS.WT and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/TX.VAL.TECH.CD?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator TX.VAL.TECH.CD and stored it 
+10-02 12:52:44,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/VC.PKP.TOTL.UN?date=2015&format=json&per_page=10000
+10-02 12:52:44,SBS,wb.py:47,INFO, got info for 264 countries for indicator VC.PKP.TOTL.UN and stored it 
+10-02 12:52:45,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/WP_time_01.1?date=2015&format=json&per_page=10000
+10-02 12:52:45,SBS,wb.py:47,INFO, got info for 264 countries for indicator WP_time_01.1 and stored it 
+10-02 12:52:45,SBS,wb.py:25,INFO, successfully received a response from the WB API endpoint http://api.worldbank.org/countries/ALL/indicators/WP15163_4.1?date=2015&format=json&per_page=10000
+10-02 12:52:45,SBS,wb.py:47,INFO, got info for 264 countries for indicator WP15163_4.1 and stored it 
+10-02 12:52:45,SBS,wb.py:75,INFO, WB data downloaded, going to save it into WDI_data_as_downloaded.csv
+10-02 12:52:45,SBS,utils.py:135,INFO, going to write dictionary to .\output\WDI_data_as_downloaded.csv
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BB",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BB, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "JM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country JM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "WS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country WS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "JG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country JG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "BZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country BZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "RU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country RU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "RW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country RW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "RS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country RS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "RO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country RO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GQ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GQ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "JP",
+10-02 12:52:45,SBS,utils.py:166,INFO, country JP, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GB",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GB, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "GH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country GH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "OM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country OM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "OE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country OE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "UY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country UY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "JO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country JO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "B8",
+10-02 12:52:45,SBS,utils.py:166,INFO, country B8, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "HR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country HR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "HT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country HT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "HU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country HU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "HK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country HK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "HN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country HN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IQ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IQ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "Z4",
+10-02 12:52:45,SBS,utils.py:166,INFO, country Z4, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "Z7",
+10-02 12:52:45,SBS,utils.py:166,INFO, country Z7, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "EG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country EG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "PL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country PL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "EE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country EE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T2",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T2, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "EC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country EC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SB",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SB, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "EU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country EU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ET",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ET, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZQ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZQ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ES",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ES, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ER",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ER, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ME",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ME, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "UZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country UZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ML",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ML, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MV",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MV, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MP",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MP, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "8S",
+10-02 12:52:45,SBS,utils.py:166,INFO, country 8S, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "UG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country UG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MX",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MX, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "FR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country FR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "1W",
+10-02 12:52:45,SBS,utils.py:166,INFO, country 1W, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "S3",
+10-02 12:52:45,SBS,utils.py:166,INFO, country S3, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "S2",
+10-02 12:52:45,SBS,utils.py:166,INFO, country S2, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "S1",
+10-02 12:52:45,SBS,utils.py:166,INFO, country S1, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "S4",
+10-02 12:52:45,SBS,utils.py:166,INFO, country S4, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "1A",
+10-02 12:52:45,SBS,utils.py:166,INFO, country 1A, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ZT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ZT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "FI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country FI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "FJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country FJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "FM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country FM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "FO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country FO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NP",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NP, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "NR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country NR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XP",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XP, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XQ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XQ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CV",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CV, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "F1",
+10-02 12:52:45,SBS,utils.py:166,INFO, country F1, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SX",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SX, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SV",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SV, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ST",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ST, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KP",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KP, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "KY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country KY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DJ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DJ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "YE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country YE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "DZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country DZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "US",
+10-02 12:52:45,SBS,utils.py:166,INFO, country US, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "7E",
+10-02 12:52:45,SBS,utils.py:166,INFO, country 7E, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LB",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LB, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TV",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TV, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "CL",
+10-02 12:52:45,SBS,utils.py:166,INFO, country CL, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LK",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LK, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LV",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LV, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "V1",
+10-02 12:52:45,SBS,utils.py:166,INFO, country V1, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "V2",
+10-02 12:52:45,SBS,utils.py:166,INFO, country V2, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "V3",
+10-02 12:52:45,SBS,utils.py:166,INFO, country V3, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "V4",
+10-02 12:52:45,SBS,utils.py:166,INFO, country V4, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TH",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TH, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LY",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LY, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VI",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VI, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "VC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country VC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AD",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AD, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AF",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AF, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T6",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T6, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T7",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T7, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T4",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T4, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T5",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T5, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AM",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AM, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "T3",
+10-02 12:52:45,SBS,utils.py:166,INFO, country T3, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AO",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AO, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "XG",
+10-02 12:52:45,SBS,utils.py:166,INFO, country XG, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AS",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AS, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AR",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AR, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AU",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AU, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AT",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AT, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "AW",
+10-02 12:52:45,SBS,utils.py:166,INFO, country AW, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IN",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IN, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "TZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country TZ, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "4E",
+10-02 12:52:45,SBS,utils.py:166,INFO, country 4E, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "IE",
+10-02 12:52:45,SBS,utils.py:166,INFO, country IE, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "ID",
+10-02 12:52:45,SBS,utils.py:166,INFO, country ID, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "LC",
+10-02 12:52:45,SBS,utils.py:166,INFO, country LC, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "UA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country UA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "QA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country QA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "SA",
+10-02 12:52:45,SBS,utils.py:166,INFO, country SA, indicators 83
+10-02 12:52:45,SBS,utils.py:157,INFO, country "MZ",
+10-02 12:52:45,SBS,utils.py:166,INFO, country MZ, indicators 83
+10-02 12:52:45,SBS,wb.py:84,INFO, columns in the data frame -> Index([u'country_code', u'IC.TAX.LABR.CP.ZS', u'WP_time_01.1',
+       u'SP.POP.1564.TO.ZS', u'IC.BUS.NDNS.ZS', u'IC.LGL.CRED.XQ',
+       u'IC.GOV.DURS.ZS', u'DT.DOD.PVLX.GN.ZS', u'SE.ADT.LITR.ZS',
+       u'IC.EXP.COST.CD', u'AG.LND.TOTL.RU.K2', u'IQ.WEF.CUST.XQ',
+       u'IC.IMP.DURS', u'EN.POP.SLUM.UR.ZS', u'FB.ATM.TOTL.P5', u'IC.ELC.TIME',
+       u'BG.GSR.NFSV.GD.ZS', u'FP.CPI.TOTL.ZG', u'IC.BUS.EASE.XQ',
+       u'IQ.WEF.PORT.XQ', u'SH.STA.ACSN.UR', u'IC.REG.PROC', u'IC.BUS.DISC.XQ',
+       u'EG.ELC.RNEW.ZS', u'SL.EMP.MPYR.ZS', u'SP.URB.TOTL.IN.ZS',
+       u'IC.FRM.DURS', u'SL.EMP.TOTL.SP.MA.NE.ZS', u'SH.H2O.SAFE.ZS',
+       u'IC.ELC.DURS', u'IC.WRH.DURS', u'IT.CEL.SETS.P2', u'NY.GNP.PCAP.CD',
+       u'NE.CON.PRVT.PC.KD.ZG', u'WP15163_4.1', u'EN.ATM.CO2E.EG.ZS',
+       u'SL.EMP.TOTL.SP.FE.NE.ZS', u'CM.MKT.TRAD.GD.ZS', u'SP.POP.TOTL',
+       u'DT.ODA.ODAT.PC.ZS', u'TX.VAL.TECH.CD', u'IC.FRM.ISOC.ZS',
+       u'IC.TAX.METG', u'AG.LND.TOTL.UR.K2', u'IC.ISV.DURS', u'SI.POV.GINI',
+       u'VC.PKP.TOTL.UN', u'SL.GDP.PCAP.EM.KD', u'ST.INT.RCPT.XP.ZS',
+       u'IC.REG.DURS', u'SL.EMP.1524.SP.FE.NE.ZS', u'IC.CUS.DURS.EX',
+       u'IC.TAX.TOTL.CP.ZS', u'BX.KLT.DINV.WD.GD.ZS', u'SL.IND.EMPL.ZS',
+       u'IT.NET.USER.P2', u'SL.UEM.NEET.ZS', u'SL.TLF.ACTI.1524.NE.ZS',
+       u'CM.MKT.TRAD.CD', u'SL.EMP.SELF.ZS', u'SP.URB.GROW', u'IC.TAX.GIFT.ZS',
+       u'IC.IMP.COST.CD', u'SL.TLF.PART.ZS', u'SL.ISV.IFRM.ZS', u'name',
+       u'ST.INT.ARVL', u'EG.ELC.ACCS.UR.ZS', u'EN.CLC.MDAT.ZS',
+       u'EG.ELC.ACCS.ZS', u'EN.ATM.PM25.MC.ZS', u'NE.CON.PRVT.KD.ZG',
+       u'LP.LPI.OVRL.XQ', u'NE.CON.PETC.ZS', u'SL.SRV.EMPL.ZS',
+       u'FI.RES.TOTL.DT.ZS', u'IC.FRM.BRIB.ZS', u'IC.TAX.OTHR.CP.ZS',
+       u'IC.REG.COST.PC.ZS', u'IC.ELC.OUTG', u'SL.EMP.WORK.ZS',
+       u'TX.VAL.OTHR.ZS.WT', u'EN.URB.LCTY.UR.ZS', u'SI.POV.2DAY'],
+      dtype='object')
+10-02 12:52:45,SBS,wb.py:85,INFO, the dataframe contains 264 rows and 84 columns
+10-02 12:52:45,SBS,sb.py:12,INFO, about to get SB data...
+10-02 12:52:49,SBS,sb.py:28,INFO, successfully received a response from the SB API endpoint https://opendata.socrata.com/resource/xy4y-c4mk.json?$limit=50000
+10-02 12:52:50,SBS,sb.py:34,INFO, columns in the data frame -> Index([u'brand', u'city', u'coordinates', u'country', u'country_subdivision',
+       u'current_timezone_offset', u'first_seen', u'latitude', u'longitude',
+       u'name', u'olson_timezone', u'ownership_type', u'phone_number',
+       u'postal_code', u'store_id', u'store_number', u'street_1', u'street_2',
+       u'street_3', u'street_combined', u'timezone'],
+      dtype='object')
+10-02 12:52:50,SBS,sb.py:35,INFO, the dataframe contains 24825 rows and 21 columns
+10-02 12:52:57,SBS,wb.py:89,INFO, about to get WB data...
+10-02 12:52:57,SBS,utils.py:80,INFO, checking missing data...
+10-02 12:52:57,SBS,wb_check_quality.py:19,INFO, begin checks for invalid data...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking IC.TAX.LABR.CP.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking WP_time_01.1 ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking SP.POP.1564.TO.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking IC.BUS.NDNS.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking IC.LGL.CRED.XQ ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking IC.GOV.DURS.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking DT.DOD.PVLX.GN.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking SE.ADT.LITR.ZS ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking IC.EXP.COST.CD ...
+10-02 12:52:57,SBS,utils.py:62,INFO, checking AG.LND.TOTL.RU.K2 ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IQ.WEF.CUST.XQ ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.IMP.DURS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking EN.POP.SLUM.UR.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking FB.ATM.TOTL.P5 ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.ELC.TIME ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking BG.GSR.NFSV.GD.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking FP.CPI.TOTL.ZG ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.BUS.EASE.XQ ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IQ.WEF.PORT.XQ ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking SH.STA.ACSN.UR ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.REG.PROC ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.BUS.DISC.XQ ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking EG.ELC.RNEW.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking SL.EMP.MPYR.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking SP.URB.TOTL.IN.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.FRM.DURS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking SL.EMP.TOTL.SP.MA.NE.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking SH.H2O.SAFE.ZS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.ELC.DURS ...
+10-02 12:52:58,SBS,utils.py:62,INFO, checking IC.WRH.DURS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking IT.CEL.SETS.P2 ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking NY.GNP.PCAP.CD ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking NE.CON.PRVT.PC.KD.ZG ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking WP15163_4.1 ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking EN.ATM.CO2E.EG.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking SL.EMP.TOTL.SP.FE.NE.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking CM.MKT.TRAD.GD.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking SP.POP.TOTL ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking DT.ODA.ODAT.PC.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking TX.VAL.TECH.CD ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking IC.FRM.ISOC.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking IC.TAX.METG ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking AG.LND.TOTL.UR.K2 ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking IC.ISV.DURS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking SI.POV.GINI ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking VC.PKP.TOTL.UN ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking SL.GDP.PCAP.EM.KD ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking ST.INT.RCPT.XP.ZS ...
+10-02 12:52:59,SBS,utils.py:62,INFO, checking IC.REG.DURS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.EMP.1524.SP.FE.NE.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking IC.CUS.DURS.EX ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking IC.TAX.TOTL.CP.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking BX.KLT.DINV.WD.GD.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.IND.EMPL.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking IT.NET.USER.P2 ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.UEM.NEET.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.TLF.ACTI.1524.NE.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking CM.MKT.TRAD.CD ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.EMP.SELF.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SP.URB.GROW ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking IC.TAX.GIFT.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking IC.IMP.COST.CD ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.TLF.PART.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking SL.ISV.IFRM.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking ST.INT.ARVL ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking EG.ELC.ACCS.UR.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking EN.CLC.MDAT.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking EG.ELC.ACCS.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking EN.ATM.PM25.MC.ZS ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking NE.CON.PRVT.KD.ZG ...
+10-02 12:53:00,SBS,utils.py:62,INFO, checking LP.LPI.OVRL.XQ ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking NE.CON.PETC.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking SL.SRV.EMPL.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking FI.RES.TOTL.DT.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking IC.FRM.BRIB.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking IC.TAX.OTHR.CP.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking IC.REG.COST.PC.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking IC.ELC.OUTG ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking SL.EMP.WORK.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking TX.VAL.OTHR.ZS.WT ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking EN.URB.LCTY.UR.ZS ...
+10-02 12:53:01,SBS,utils.py:62,INFO, checking SI.POV.2DAY ...
+10-02 12:53:01,SBS,utils.py:47,INFO, checking country_code ...
+10-02 12:53:01,SBS,wb_check_quality.py:45,INFO, total number of attributes checked for invalid data 83
+10-02 12:53:01,SBS,wb.py:93,INFO, ======= quality metrics for WB data ============
+10-02 12:53:01,SBS,wb.py:94,INFO, {
+  "invalid_data": {
+    "IC.TAX.OTHR.CP.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SP.POP.1564.TO.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.BUS.NDNS.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.LGL.CRED.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.GOV.DURS.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "DT.DOD.PVLX.GN.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SE.ADT.LITR.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EN.ATM.PM25.MC.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "AG.LND.TOTL.RU.K2": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "NE.CON.PETC.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "country_code": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IQ.WEF.CUST.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EN.POP.SLUM.UR.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.IMP.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.ELC.TIME": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "BG.GSR.NFSV.GD.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "FP.CPI.TOTL.ZG": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.BUS.EASE.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IQ.WEF.PORT.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SH.STA.ACSN.UR": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.REG.PROC": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.BUS.DISC.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.TAX.LABR.CP.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.MPYR.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "dqs": {
+      "adjusted_score": 100.0, 
+      "raw_score": 100.0
+    }, 
+    "SP.URB.TOTL.IN.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.FRM.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SH.H2O.SAFE.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.ELC.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.WRH.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IT.CEL.SETS.P2": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "NY.GNP.PCAP.CD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "NE.CON.PRVT.PC.KD.ZG": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.TOTL.SP.MA.NE.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "AG.LND.TOTL.UR.K2": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.TOTL.SP.FE.NE.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "CM.MKT.TRAD.GD.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SP.POP.TOTL": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "DT.ODA.ODAT.PC.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.FRM.ISOC.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.TAX.METG": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "FB.ATM.TOTL.P5": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EN.ATM.CO2E.EG.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SI.POV.GINI": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "VC.PKP.TOTL.UN": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.GDP.PCAP.EM.KD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.WORK.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.TAX.GIFT.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.REG.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.1524.SP.FE.NE.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.CUS.DURS.EX": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.TAX.TOTL.CP.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EG.ELC.RNEW.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EN.URB.LCTY.UR.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IT.NET.USER.P2": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.UEM.NEET.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.TLF.ACTI.1524.NE.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.IND.EMPL.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "WP_time_01.1": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SP.URB.GROW": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "CM.MKT.TRAD.CD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.EMP.SELF.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.IMP.COST.CD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.TLF.PART.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.ISV.IFRM.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "ST.INT.ARVL": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EG.ELC.ACCS.UR.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.ISV.DURS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "TX.VAL.TECH.CD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.EXP.COST.CD": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "NE.CON.PRVT.KD.ZG": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "LP.LPI.OVRL.XQ": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EN.CLC.MDAT.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "BX.KLT.DINV.WD.GD.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "FI.RES.TOTL.DT.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.FRM.BRIB.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "EG.ELC.ACCS.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.REG.COST.PC.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "TX.VAL.OTHR.ZS.WT": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "IC.ELC.OUTG": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "ST.INT.RCPT.XP.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "WP15163_4.1": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SL.SRV.EMPL.ZS": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "SI.POV.2DAY": {
+      "count": 0, 
+      "percent": 0.0
+    }
+  }, 
+  "missing_data": {
+    "overall": {
+      "count": 14714, 
+      "percent": 66.35101
+    }, 
+    "IC.TAX.OTHR.CP.ZS": {
+      "count": 41, 
+      "percent": 15.530303
+    }, 
+    "SP.POP.1564.TO.ZS": {
+      "count": 24, 
+      "percent": 9.090909
+    }, 
+    "IC.BUS.NDNS.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.LGL.CRED.XQ": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "IC.GOV.DURS.ZS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "DT.DOD.PVLX.GN.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SE.ADT.LITR.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "EN.ATM.PM25.MC.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "AG.LND.TOTL.RU.K2": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "NE.CON.PETC.ZS": {
+      "count": 119, 
+      "percent": 45.075758
+    }, 
+    "IQ.WEF.CUST.XQ": {
+      "count": 84, 
+      "percent": 31.818182
+    }, 
+    "EN.POP.SLUM.UR.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.IMP.DURS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "country_code": {
+      "count": 1, 
+      "percent": 0.378788
+    }, 
+    "BG.GSR.NFSV.GD.ZS": {
+      "count": 133, 
+      "percent": 50.378788
+    }, 
+    "FP.CPI.TOTL.ZG": {
+      "count": 64, 
+      "percent": 24.242424
+    }, 
+    "IC.ELC.TIME": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "IQ.WEF.PORT.XQ": {
+      "count": 84, 
+      "percent": 31.818182
+    }, 
+    "SH.STA.ACSN.UR": {
+      "count": 25, 
+      "percent": 9.469697
+    }, 
+    "IC.REG.PROC": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "IC.BUS.DISC.XQ": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "IC.TAX.LABR.CP.ZS": {
+      "count": 41, 
+      "percent": 15.530303
+    }, 
+    "SL.EMP.MPYR.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "dqs": {
+      "adjusted_score": 99.0, 
+      "raw_score": 33.64899
+    }, 
+    "SP.URB.TOTL.IN.ZS": {
+      "count": 4, 
+      "percent": 1.515152
+    }, 
+    "IC.FRM.DURS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "SH.H2O.SAFE.ZS": {
+      "count": 27, 
+      "percent": 10.227273
+    }, 
+    "IC.BUS.EASE.XQ": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "IC.WRH.DURS": {
+      "count": 34, 
+      "percent": 12.878788
+    }, 
+    "IT.CEL.SETS.P2": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "NY.GNP.PCAP.CD": {
+      "count": 54, 
+      "percent": 20.454545
+    }, 
+    "NE.CON.PRVT.PC.KD.ZG": {
+      "count": 139, 
+      "percent": 52.651515
+    }, 
+    "SL.EMP.TOTL.SP.MA.NE.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "AG.LND.TOTL.UR.K2": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.EMP.TOTL.SP.FE.NE.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "CM.MKT.TRAD.GD.ZS": {
+      "count": 188, 
+      "percent": 71.212121
+    }, 
+    "SP.POP.TOTL": {
+      "count": 2, 
+      "percent": 0.757576
+    }, 
+    "DT.ODA.ODAT.PC.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.FRM.ISOC.ZS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "IC.TAX.METG": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "FB.ATM.TOTL.P5": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "EN.ATM.CO2E.EG.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SI.POV.GINI": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "VC.PKP.TOTL.UN": {
+      "count": 248, 
+      "percent": 93.939394
+    }, 
+    "SL.GDP.PCAP.EM.KD": {
+      "count": 90, 
+      "percent": 34.090909
+    }, 
+    "SL.EMP.WORK.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.TAX.GIFT.ZS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "IC.REG.DURS": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "SL.EMP.1524.SP.FE.NE.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.ELC.DURS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "IC.TAX.TOTL.CP.ZS": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "EG.ELC.RNEW.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "EN.URB.LCTY.UR.ZS": {
+      "count": 73, 
+      "percent": 27.651515
+    }, 
+    "IT.NET.USER.P2": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.UEM.NEET.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.TLF.ACTI.1524.NE.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.IND.EMPL.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "WP_time_01.1": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SP.URB.GROW": {
+      "count": 4, 
+      "percent": 1.515152
+    }, 
+    "CM.MKT.TRAD.CD": {
+      "count": 183, 
+      "percent": 69.318182
+    }, 
+    "IC.CUS.DURS.EX": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "IC.IMP.COST.CD": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.TLF.PART.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.ISV.IFRM.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.EMP.SELF.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "ST.INT.ARVL": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "EG.ELC.ACCS.UR.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.ISV.DURS": {
+      "count": 51, 
+      "percent": 19.318182
+    }, 
+    "TX.VAL.TECH.CD": {
+      "count": 192, 
+      "percent": 72.727273
+    }, 
+    "IC.EXP.COST.CD": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "NE.CON.PRVT.KD.ZG": {
+      "count": 137, 
+      "percent": 51.893939
+    }, 
+    "LP.LPI.OVRL.XQ": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "EN.CLC.MDAT.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "BX.KLT.DINV.WD.GD.ZS": {
+      "count": 48, 
+      "percent": 18.181818
+    }, 
+    "FI.RES.TOTL.DT.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.FRM.BRIB.ZS": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "EG.ELC.ACCS.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "IC.REG.COST.PC.ZS": {
+      "count": 30, 
+      "percent": 11.363636
+    }, 
+    "TX.VAL.OTHR.ZS.WT": {
+      "count": 126, 
+      "percent": 47.727273
+    }, 
+    "IC.ELC.OUTG": {
+      "count": 218, 
+      "percent": 82.575758
+    }, 
+    "ST.INT.RCPT.XP.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "WP15163_4.1": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SL.SRV.EMPL.ZS": {
+      "count": 264, 
+      "percent": 100.0
+    }, 
+    "SI.POV.2DAY": {
+      "count": 264, 
+      "percent": 100.0
+    }
+  }
+}
+10-02 12:53:01,SBS,wb.py:95,INFO, =======================================================
+10-02 12:53:01,SBS,sb.py:44,INFO, about to check quality of SB data...
+10-02 12:53:01,SBS,utils.py:80,INFO, checking missing data...
+10-02 12:53:02,SBS,sb_check_quality.py:168,INFO, begin checks for invalid data...
+10-02 12:53:02,SBS,sb_check_quality.py:43,INFO, checking store_id uniqueness...
+10-02 12:53:02,SBS,sb_check_quality.py:56,INFO, checking lat/long values...
+10-02 12:53:02,SBS,sb_check_quality.py:68,ERROR, invalid lat/long value seen nan/nan for store id 3710
+10-02 12:53:04,SBS,sb_check_quality.py:68,ERROR, invalid lat/long value seen nan/nan for store id 92834
+10-02 12:53:04,SBS,sb_check_quality.py:68,ERROR, invalid lat/long value seen nan/nan for store id 113833
+10-02 12:53:04,SBS,sb_check_quality.py:77,INFO, checking timezone offsets...
+10-02 12:53:07,SBS,sb_check_quality.py:146,INFO, checking country codes...
+10-02 12:53:21,SBS,sb_check_quality.py:26,INFO, checking brand validity...
+10-02 12:53:23,SBS,sb_check_quality.py:32,ERROR, found an invalid brand -> Coffee House Holdings for store id 18753
+10-02 12:53:24,SBS,sb_check_quality.py:116,INFO, checking store number...
+10-02 12:53:26,SBS,sb_check_quality.py:99,INFO, checking timezone offsets...
+10-02 12:53:28,SBS,utils.py:47,INFO, checking ownership_type ...
+10-02 12:53:31,SBS,utils.py:28,INFO, checking first_seen ...
+10-02 12:53:36,SBS,sb_check_quality.py:199,INFO, total number of attributes checked for invalid data 9
+10-02 12:53:36,SBS,sb.py:48,INFO, ======= quality metrics for starbucks data ============
+10-02 12:53:36,SBS,sb.py:49,INFO, {
+  "invalid_data": {
+    "store_number": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "lat_long": {
+      "count": 3, 
+      "percent": 0.012085
+    }, 
+    "store_id": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "dqs": {
+      "adjusted_score": 99.999233, 
+      "raw_score": 99.999233
+    }, 
+    "country": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "brand": {
+      "count": 1, 
+      "percent": 0.0
+    }, 
+    "current_timezone_offset": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "timezone": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "first_seen": {
+      "count": 0, 
+      "percent": 0.0
+    }, 
+    "ownership_type": {
+      "count": 0, 
+      "percent": 0.0
+    }
+  }, 
+  "missing_data": {
+    "phone_number": {
+      "count": 6439, 
+      "percent": 25.937563
+    }, 
+    "city": {
+      "count": 16, 
+      "percent": 0.064451
+    }, 
+    "dqs": {
+      "adjusted_score": 100.0, 
+      "raw_score": 91.523138
+    }, 
+    "overall": {
+      "count": 44192, 
+      "percent": 8.476862
+    }, 
+    "longitude": {
+      "count": 3, 
+      "percent": 0.012085
+    }, 
+    "street_combined": {
+      "count": 2, 
+      "percent": 0.008056
+    }, 
+    "postal_code": {
+      "count": 1735, 
+      "percent": 6.988922
+    }, 
+    "coordinates": {
+      "count": 3, 
+      "percent": 0.012085
+    }, 
+    "latitude": {
+      "count": 3, 
+      "percent": 0.012085
+    }, 
+    "street_1": {
+      "count": 3, 
+      "percent": 0.012085
+    }, 
+    "street_2": {
+      "count": 16679, 
+      "percent": 67.186304
+    }, 
+    "street_3": {
+      "count": 19309, 
+      "percent": 77.780463
+    }
+  }
+}
+10-02 12:53:36,SBS,sb.py:50,INFO, =======================================================
+10-02 12:53:36,SBS,wb.py:98,INFO, about to clean data...
+10-02 12:53:36,SBS,sb.py:53,INFO, about to clean data...
+10-02 12:53:36,SBS,wb.py:98,INFO, about to clean data...
+10-02 12:53:36,SBS,sb.py:53,INFO, about to clean data...
+10-02 12:53:36,SBS,main.py:77,INFO, all done, existing...

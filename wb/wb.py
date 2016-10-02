@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 import requests as req
 import pandas as pd
-import numpy as np
 import json
 import csv
+import os
 
 from common import globals as glob
 from common import utils
+import wb_check_quality as cq
 
 def get_wdi_data(wdi, wdi_data):
     
@@ -75,10 +76,23 @@ def get_data():
     #glob.log.info(json.dumps(wdi_data, indent=glob.INDENT_LEVEL))
     #dump the dictionary into a csv file
     utils.write_dict_to_csv(wdi_data, glob.WDI_CSV_FILE)
+    
+    #now read the data from the CSV file we just wrote into a dataframe
+    df = pd.read_csv(os.path.join(glob.OUTPUT_DIR_NAME, glob.WDI_CSV_FILE))
+    #del df['Unnamed'] #an extra column gets inserted at the end because we put a ',' after every field in the csv
+    #lets see what the dataframe looks like
+    glob.log.info('columns in the data frame -> ' + str(df.columns))
+    glob.log.info('the dataframe contains %d rows and %d columns' %(df.shape[0], df.shape[1]))
     return df
 
 def check_quality_of_data(df):
     glob.log.info('about to get WB data...')
+    
+    #overall quality metrics
+    qual = cq.check(df)
+    glob.log.info('======= quality metrics for WB data ============')
+    glob.log.info(json.dumps(qual, indent=glob.INDENT_LEVEL))
+    glob.log.info('=======================================================')
     
 def clean_data(df):
     glob.log.info('about to clean data...')

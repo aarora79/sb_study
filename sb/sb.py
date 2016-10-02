@@ -4,7 +4,7 @@ import pandas as pd
 import json
 import os
 
-import check_quality as cq
+import sb_check_quality as cq
 
 from common import globals as glob
 
@@ -36,7 +36,7 @@ def get_data():
         
         #save the dataframe to a CSV
         fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.SB_CSV_FILE)
-        df.to_csv(fname, encoding='utf-8')
+        df.to_csv(fname, encoding='utf-8', index = False)
         
     return df
 
