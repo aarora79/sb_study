@@ -77,6 +77,12 @@ def get_data():
     #dump the dictionary into a csv file
     utils.write_dict_to_csv(wdi_data, glob.WDI_CSV_FILE)
     
+    #also save this data in dictionary form in glob because this would be useful
+    #at the time of feature creation..ultimately we will recreate this dict from 
+    #a csv file so that we dont have to ingest the data everytime we run this 
+    #for now its ok, this will be modified in the next phase....
+    glob.wb['wdi_data'] = wdi_data
+    
     #now read the data from the CSV file we just wrote into a dataframe
     df = pd.read_csv(os.path.join(glob.OUTPUT_DIR_NAME, glob.WDI_CSV_FILE))
     #del df['Unnamed'] #an extra column gets inserted at the end because we put a ',' after every field in the csv
