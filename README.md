@@ -1,4 +1,4 @@
-# A data science tale about a coffe company
+# A data science tale about a coffee company
 Please visit https://aarora79.github.io/sb_study/ for more information.
 
 #License
