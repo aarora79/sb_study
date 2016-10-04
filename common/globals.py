@@ -11,6 +11,9 @@ __PROJECT_NAME_LONG__ = 'A data science tale about a coffee company'
 #folder for storing all the output data
 OUTPUT_DIR_NAME = os.path.join('.', 'output')
 
+#file to store the data quality score
+DSQ_CSV = 'dqs.csv'
+
 #dictionaries for starbucks and WB data, empty for now
 wb = {}
 sb = {} 

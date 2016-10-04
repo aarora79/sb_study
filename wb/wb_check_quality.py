@@ -4,8 +4,6 @@ Created on Sun Oct  2 11:20:28 2016
 
 @author: aarora
 """
-import pandas as pd
-
 from common import globals as glob
 from common import utils
 

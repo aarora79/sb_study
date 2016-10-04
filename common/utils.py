@@ -8,6 +8,14 @@ SPECIAL_CHARS = string.punctuation.replace("_", "")
 SPECIAL_CHARS = string.punctuation.replace("-", "")
 SPECIAL_CHARS = set(SPECIAL_CHARS)
 
+def get_quality_summary(qual):
+    summary = {}
+    #we are only intrested in the dqs (data quality score) under each category
+    for q in qual.keys():
+        summary[q] = {}
+        summary[q]['dqs'] = qual[q]['dqs']
+    return summary
+    
 def contains_special_chars(word):   
     #glob.log.info(word)
     if any(char in SPECIAL_CHARS for char in word):
@@ -122,7 +130,12 @@ def check_missing(qual, df, mf = []):
     #is calculated based on missing values that really matter i.e. which would
     #cause the entire row to get discarded.
     raw_score = round(100 - fraction_empty, glob.PRECISION)
-    adjusted_raw_score = round(100 - ((float(mandatory_cells_empty_count)/total_cell_count)))
+    if mandatory_feature_list_provided == True:
+        adjusted_raw_score = round(100 - ((float(mandatory_cells_empty_count)/total_cell_count)))
+    else:
+        #in case no mandatory features were provided then adjusted score is same as raw score
+        adjusted_raw_score = raw_score
+        
     qual['missing_data']['dqs'] = {}
     qual['missing_data']['dqs']['raw_score']      = raw_score
     qual['missing_data']['dqs']['adjusted_score'] = adjusted_raw_score 

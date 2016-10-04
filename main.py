@@ -1,11 +1,24 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
+import pandas as pd
 
 from common import logger
 from common import globals as glob
+from common import utils
 from wb import wb
 from sb import sb
+
+ID_RS = 'Invalid_Data_Raw_Score'
+ID_AS = 'Invalid_Data_Adjusted_Score'
+MD_RS = 'Missing_Data_Raw_Score'
+MD_AS = 'Missing_Data_Adjusted_Score'
+DS    = 'Datasource'
+ID    = 'invalid_data'
+MD    = 'missing_data'
+DQS   = 'dqs'
+RS    = 'raw_score'
+AS    = 'adjusted_score'
 
 def get_data():
     #get WB data
@@ -18,8 +31,30 @@ def check_quality_of_data():
     #check quality WB data
     glob.wb['quality'] = wb.check_quality_of_data(glob.wb['df'])
     
+    #print dqs
+    wb_summary = utils.get_quality_summary(glob.wb['quality']) 
+    glob.log.info('WB data quality score is: ')
+    glob.log.info(wb_summary)
+
     #check quality SB data
     glob.sb['quality'] = sb.check_quality_of_data(glob.sb['df'])
+    #print dqs
+    sb_summary = utils.get_quality_summary(glob.sb['quality']) 
+    glob.log.info('Starbucks data quality score is: ')
+    glob.log.info(sb_summary)
+    
+    #store everything in a CSV for easy post processing/display
+    columns = [DS, ID_RS, ID_AS, MD_RS, MD_AS]
+    df = pd.DataFrame(columns = columns)
+    df[DS] = ['WorldBank', 'Starbucks']
+    df[ID_RS] = [wb_summary[ID][DQS][RS], sb_summary[ID][DQS][RS]]
+    df[ID_AS] = [wb_summary[ID][DQS][AS], sb_summary[ID][DQS][AS]]    
+    df[MD_RS] = [wb_summary[MD][DQS][RS], sb_summary[MD][DQS][RS]]
+    df[MD_AS] = [wb_summary[MD][DQS][AS], sb_summary[MD][DQS][AS]]    
+
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.DSQ_CSV)    
+    df.to_csv(fname, index = False)
+    
     
 def clean_data():
     #clean WB data
