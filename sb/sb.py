@@ -161,6 +161,31 @@ def add_is_airport_feature(df):
     df['on_airport'] = on_airport_list
     return df    
 
+def map_eodb_index_to_category(code, index):
+    #lets categorize the index into categories
+    #VH (Very High): 1 to 10 [both inclusive]
+    #H  (High): 11 to 30 [both inclusive]
+    #M  (Medium): 31 to 90 [both inclusive]
+    #L  (low): 91 to 130 [ both inclusive]
+    #VL (Very Low): >= 131 
+
+    #will optimize this later on, can put the whole thing in a loop
+    if index >= 1 and index <= 10:
+        return 'VH'
+    if index >= 11 and index <= 30:
+        return 'H'
+
+    if index >= 31 and index <= 90:
+        return 'M'
+
+    if index >= 91 and index <= 130:
+        return 'L'
+
+    if index >= 131:
+        return 'VL'
+    glob.log.error('Could not map EODB index %d for country code %s' %(index, code))    
+    return 'U' #for 'unknown   
+     
 def add_eodb_feature(df):
     #join this data with with the WB data for intresting features...
     #ease of doing business is certainly one..to answer questions like what %
@@ -173,16 +198,18 @@ def add_eodb_feature(df):
     for i  in range(len(df)):
         row = df.ix[i]
         code = row['country']
-        eodb = 0 #place holder for unknown, 0 is not a valid value
+        eodb = 'U' #place holder for unknown, 0 is not a valid value
         if code in glob.wb['wdi_data'].keys():
             #country code found in WB data, we can find the indicator value now
             #for a list of all WDI (World Development Indicators) used in this 
             #package..look at WDI_Series.csv file in the root directoryof the package
-            eodb = glob.wb['wdi_data'][code]['IC.BUS.EASE.XQ']
+        
+            #bin into a category
+            eodb = map_eodb_index_to_category(code, glob.wb['wdi_data'][code]['IC.BUS.EASE.XQ'])
         eodb_index_list.append(eodb)
         
     #we are ready with the onairport list now, add it to the dataframe as a new column
-    df['eodb_index'] = eodb_index_list
+    df['eodb_category'] = eodb_index_list
     return df    
         
 def create_features(df):
