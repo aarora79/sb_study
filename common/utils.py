@@ -258,7 +258,7 @@ def detect_outliers(df, ds_name, excluded_col_list, key_col_name):
                 entry = df.iloc[i]
                 glob.log.error('[%s] for entry %s, field %s has value %f which is outside the 3rd stddev(%f)'
                                %(ds_name, entry[key_col_name], col, entry[col], 3*sigma))
-                f.write('%s,%s,%s,%f,%f\n' %(ds_name, entry[key_col_name], col, entry[col], 3*sigma))  
+                f.write('"%s","%s","%s","%f","%f"\n' %(ds_name, entry[key_col_name], col, entry[col], 3*sigma))  
     f.close()                
         
 def calc_r(ds_name, fname, df, feature_list):
