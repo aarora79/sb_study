@@ -4,8 +4,8 @@ import logging
 import logging.config
 import os
 
-import globals as glob
-
+#import globals as glob
+from . import globals as glob
 def init(name):
     logger = logging.getLogger(name)
     name += '.log'

@@ -1,0 +1,9 @@
+feature,mean,median,mode,stddev
+brand,0,0,Starbucks:24718,0
+city,0,0,上海市:497,0
+country,0,0,US:13480,0
+ownership_type,0,0,CO:11784,0
+timezone,0,0,Eastern Standard Time:5459,0
+continent,0,0,North America:15556,0
+on_airport,0,0,False:24632,0
+eodb_category,0,0,VH:15546,0

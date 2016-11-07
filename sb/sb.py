@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import requests as req
 import pandas as pd
-import json
+#import json
 import os
 import sys
 
-import sb_check_quality as cq
-
+from . import sb_check_quality as cq
+from common import utils
 from common import globals as glob
 
 # dictionary to hold country to continent mapping, will be filled in
@@ -27,7 +27,7 @@ def get_code_to_country_mapping(code_to_country_dict):
     for i  in range(len(df)):
         row = df.ix[i]
         country   = row['Name']
-        country = country.decode('utf-8') #handle unicode, many countries have names that do not fit into ascii
+        #country = country.decode('utf-8') #handle unicode, many countries have names that do not fit into ascii
         code = row['Code']
         if code not in code_to_country_dict.keys():
             code_to_country_dict[code] = country 
@@ -50,14 +50,15 @@ def get_country_to_continent_mapping(country_to_continent_dict):
         glob.log.info('successfully received a response from the country to continent API endpoint ' + api)
         #dump the data in a csv file
         fname = glob.COUNTRY_CONTINENET_CSV
-        with open(fname, 'wb') as csv_file:  
+        with open(fname, 'w') as csv_file:  
             csv_file.write(r.text)            
             
         #now read the csv into a dataframe so that we can use it in future
         df = pd.read_csv(fname)    
         for i  in range(len(df)):
             row = df.ix[i]
-            country   = row['Country'].decode('utf-8')
+            #country   = row['Country'].decode('utf-8')
+            country   = row['Country']
             continent = row['Continent']
             if country not in country_to_continent_dict.keys():
                 country_to_continent_dict[country] = continent  
@@ -102,7 +103,7 @@ def check_quality_of_data(df):
     #overall quality metrics
     qual = cq.check(df)
     glob.log.info('======= quality metrics for starbucks data ============')
-    glob.log.info(json.dumps(qual, indent=glob.INDENT_LEVEL))
+    glob.log.info(qual)
     glob.log.info('=======================================================')
     return qual
  
@@ -152,10 +153,13 @@ def add_is_airport_feature(df):
         on_airport = False
         for k in AIRPORT_KEYWORDS:
             try:     
+                #glob.log.error('name %s street %s' %(name, street_combined))
+                
                 if k in name or k in street_combined:
                     on_airport = True
             except Exception as e:
-                glob.log.error('could not check name %s street %s for airport because it is probably in unicode' % (name, street_combined))
+                glob.log.error('could not check name and street-combined for airport because it is probably in unicode')
+                #glob.log.error('could not check name %s street %s for airport because it is probably in unicode' % (name, street_combined))
         on_airport_list.append(on_airport)  
     #we are ready with the onairport list now, add it to the dataframe as a new column
     df['on_airport'] = on_airport_list
@@ -170,20 +174,24 @@ def map_eodb_index_to_category(code, index):
     #VL (Very Low): >= 131 
 
     #will optimize this later on, can put the whole thing in a loop
-    if index >= 1 and index <= 10:
-        return 'VH'
-    if index >= 11 and index <= 30:
-        return 'H'
-
-    if index >= 31 and index <= 90:
-        return 'M'
-
-    if index >= 91 and index <= 130:
-        return 'L'
-
-    if index >= 131:
-        return 'VL'
-    glob.log.error('Could not map EODB index %d for country code %s' %(index, code))    
+    try:
+        index = float(index)
+        if index >= 1.0 and index <= 10.0:
+            return 'VH'
+        if index >= 11.0 and index <= 30.0:
+            return 'H'
+    
+        if index >= 31.0 and index <= 90.0:
+            return 'M'
+    
+        if index >= 91.0 and index <= 130.0:
+            return 'L'
+    
+        if index >= 131.0:
+            return 'VL'
+    except Exception as e:
+        glob.log.error('Exception while handling EODB value %s, setting EODB to unknown' %(index))        
+    glob.log.error('Could not map EODB index %s for country code %s' %(index, code))    
     return 'U' #for 'unknown   
      
 def add_eodb_feature(df):
@@ -208,7 +216,7 @@ def add_eodb_feature(df):
             eodb = map_eodb_index_to_category(code, glob.wb['wdi_data'][code]['IC.BUS.EASE.XQ'])
         eodb_index_list.append(eodb)
         
-    #we are ready with the onairport list now, add it to the dataframe as a new column
+    #we are ready with the eodb list now, add it to the dataframe as a new column
     df['eodb_category'] = eodb_index_list
     return df    
         
@@ -227,15 +235,34 @@ def create_features(df):
     #all features added, create an updated CSV file with new features
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.SB_CSV_FILE_W_FEATURES)
     df.to_csv(fname, encoding='utf-8', index = False)
-        
-def clean_data(df):
-    glob.log.info('about to clean data...')
     return df
+        
+def clean_data(df, qual):
+    glob.log.info('about to clean data...')
+    #nothing to do here, no mandatory field is missing..see notes in project description..
+    #all data is categorical so no outlier detection either
+    return df, qual
 
 def visualize_data(df):
     glob.log.info('about to visualize SB data...')
 
+def do_eda(df):
+    #for the starbucks dataset all variables are categorical...so choose some
+    #which provide some useful info when we look at the mode..for example
+    #country, timezone etc..exclude fields like street address, lat long etc
+    ## all the columns :brand,city,coordinates,country,country_subdivision,
+    ##                  current_timezone_offset,first_seen,latitude,longitude,name,olson_timezone,
+    ##                  ownership_type,phone_number,postal_code,store_id,store_number,street_1,street_2,
+    ##                  street_3,street_combined,timezone
 
+    categorical = ['brand', 'city', 'country', 'ownership_type', 'timezone', 'continent', 'on_airport', 'eodb_category']
+    to_be_excluded = []    
+    for col in df.columns:
+        if col not in categorical:
+            to_be_excluded.append(col)
+    utils.do_eda(df, os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, glob.SB_EDA_CSV_FILE_NAME),
+                 'SB', categorical, to_be_excluded)
+    
 def init():
     global country_to_continent_dict
     global code_to_country_dict

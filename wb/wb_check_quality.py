@@ -31,6 +31,7 @@ def check_invalid(qual, df):
     #these two columns are string type so skip them while doing numeric validation
     str_columns = ['name', 'country_code']
     for col in df.columns:
+        #glob.log.info('going to check column name %s for invalid data' %(col))
         if col not in str_columns:
             #validate column data for being numeric
             invalid_cells += utils.check_as_numeric(qual, 'invalid_data', df, col)
