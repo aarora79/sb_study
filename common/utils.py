@@ -241,6 +241,9 @@ def do_eda(df, filename, ds_name, categorial_feature_list, excluded_list):
 
 def detect_outliers(df, ds_name, excluded_col_list, key_col_name):
     glob.log.info('Detecting outliers for %s dataset' %(ds_name))
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, ds_name + '_' + glob.OUTLIERS_CSV)
+    f = open(fname, 'w')
+    f.write('dataset,entry,field,value,3rdStdDev\n')
     for col in df.columns:
         if col in excluded_col_list:
             continue
@@ -255,6 +258,8 @@ def detect_outliers(df, ds_name, excluded_col_list, key_col_name):
                 entry = df.iloc[i]
                 glob.log.error('[%s] for entry %s, field %s has value %f which is outside the 3rd stddev(%f)'
                                %(ds_name, entry[key_col_name], col, entry[col], 3*sigma))
+                f.write('%s,%s,%s,%f,%f\n' %(ds_name, entry[key_col_name], col, entry[col], 3*sigma))  
+    f.close()                
         
 def calc_r(ds_name, fname, df, feature_list):
     glob.log.info('Calculating r for %s dataset' %(ds_name))

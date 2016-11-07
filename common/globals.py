@@ -56,6 +56,7 @@ WDI_CSV_FILE_AFTER_CLEANING = 'WDI_data.csv'
 WB_HISTOGRAM = 'WDI_hist.png'
 WB_SCATTER_MATRIX = 'WDI_scatter_matrix.png'
 WB_PEARSON_CSV = 'WDI_pearson_r.csv'
+OUTLIERS_CSV = 'outliers.csv'
 
 #some times WB does not have data for the last year, so need to get data for two years
 WB_YEAR_LATEST  = 2015

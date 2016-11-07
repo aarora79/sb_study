@@ -1,7 +1,7 @@
 Dataset,feature1,feature2,r
-combined,Num.Starbucks.Stores,IT.NET.USER.P2,0.028478
-combined,Num.Starbucks.Stores,ST.INT.ARVL,0.521326
-combined,Num.Starbucks.Stores,SP.POP.TOTL,0.263282
+combined,Num.Starbucks.Stores,IT.NET.USER.P2,0.028471
+combined,Num.Starbucks.Stores,ST.INT.ARVL,0.521332
+combined,Num.Starbucks.Stores,SP.POP.TOTL,0.263294
 combined,IT.NET.USER.P2,ST.INT.ARVL,0.087930
 combined,IT.NET.USER.P2,SP.POP.TOTL,-0.324875
 combined,ST.INT.ARVL,SP.POP.TOTL,0.311971
