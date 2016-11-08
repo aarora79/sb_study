@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 
 
-
+T_TEST_ALPHA = 0.20
 NAME_FOR_LOGGER_ANALYSIS_MODULE = 'SBS_ANALYSIS'
 POPULATION_MULTIPLIER_FOR_STORE_DENSITY = 100000
 #QUANTILES_FOR_BINNING = [0.05, 0.15, 0.20, 0.5, 0.75, 0.9]
@@ -149,26 +149,21 @@ def clean_combined_dataset(df):
 
             
 def run_t_test(df):
-    df_h_vh = df[(df['Ease.Of.Doing.Business'] == 'VeryHigh') | (df['Ease.Of.Doing.Business'] == 'High')]['Num.Starbucks.Stores']
-    df_l_vl_m = df[(df['Ease.Of.Doing.Business'] == 'Medium') | (df['Ease.Of.Doing.Business'] == 'VeryLow') | (df['Ease.Of.Doing.Business'] == 'Low')]['Num.Starbucks.Stores']
+    df_vh = df[(df['ST.INT.ARVL.Categorical'] == 'VH')]['Num.Starbucks.Stores']
+    df_row = df[(df['ST.INT.ARVL.Categorical'] == 'H') | (df['ST.INT.ARVL.Categorical'] == 'M') | (df['ST.INT.ARVL.Categorical'] == 'VL') | (df['ST.INT.ARVL.Categorical'] == 'L')]['Num.Starbucks.Stores']
     
-    result = stats.ttest_ind(a = df_h_vh, b = df_l_vl_m, equal_var = False)
+    result = stats.ttest_ind(a = df_vh, b = df_row, equal_var = False)
     glob.log.info(result)
-    if result.pvalue < 0.95:
-        glob.log.info('Null hypothesis for %s rejected because p value is of %f is less than 0.95' %('Ease.Of.Doing.Business', result.pvalue))
-    else:
-        glob.log.info('Null hypothesis for %s accepted because p value is of %f is greater than equal to 0.95' %('Ease.Of.Doing.Business', result.pvalue))
-
-    df_h_vh = df[(df['ST.INT.ARVL.Categorical'] == 'VH') | (df['ST.INT.ARVL.Categorical'] == 'H')]['Num.Starbucks.Stores']
-    df_l_vl_m = df[(df['ST.INT.ARVL.Categorical'] == 'M') | (df['ST.INT.ARVL.Categorical'] == 'VL') | (df['ST.INT.ARVL.Categorical'] == 'L')]['Num.Starbucks.Stores']
-    
-    result = stats.ttest_ind(a = df_h_vh, b = df_l_vl_m, equal_var = False)
-    glob.log.info(result)
-    if result.pvalue < 0.95:
+    if result.pvalue < T_TEST_ALPHA:
         glob.log.info('Null hypothesis for %s rejected because p value is of %f is less than 0.95' %('ST.INT.ARVL.Categorical', result.pvalue))
     else:
         glob.log.info('Null hypothesis for %s accepted because p value is of %f is greater than equal to 0.95' %('ST.INT.ARVL.Categorical', result.pvalue))
-
+    #store t-test results in a file
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.REGRESSION_DIR, glob.T_TEST_RESULT) 
+    f = open(fname, 'w')
+    f.write('\"Hypothesis\",\"No difference between average number of Starbucks stores in countries with Very high and high number of international tourist Vs Rest of the world\"\n')
+    f.write('\"T-statistic, p-value\",\"%f,%f\"\n' %(result.statistic, result.pvalue))
+    f.close()
     
 def do_eda(df):
     feature_list = ['Num.Starbucks.Stores', 'IT.NET.USER.P2', 'ST.INT.ARVL', 'SP.POP.TOTL']
