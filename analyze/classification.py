@@ -70,7 +70,11 @@ def run_models(X_train, Y_train, scoring, seed, num_instances, num_folds, depend
     models.append(('KNN', KNeighborsClassifier()))
     models.append(('CART', DecisionTreeClassifier()))
     models.append(('NB', GaussianNB()))
-    models.append(('SVM', SVC()))
+    #models.append(('SVM-sigmoid', SVC(kernel='sigmoid')))
+    models.append(('SVM-rbf', SVC(kernel='rbf'))) #all kernels are providing results identical to rbf so keeping that only
+    #models.append(('SVM-linear', SVC(kernel='linear')))
+    #models.append(('SVM-poly', SVC(kernel='poly')))
+    #models.append(('SVM-precomputed', SVC(kernel='precomputed')))
     models.append(('RandomForest', RandomForestClassifier(n_estimators=1000)))
     
     # Evaluate each model, add results to a results array,
@@ -90,15 +94,16 @@ def run_models(X_train, Y_train, scoring, seed, num_instances, num_folds, depend
     glob.log.info('-----------------------------------------')
 
 def classify_dependant(df, dependant_categorical, num_important):
-    #first find important features which we are then going to use in the classifier
-    
-    important_features = find_important_features(df, dependant_categorical, num_important)
-    
+    #first find important features which we are then going to use in the classifier  
     #from previous runs we determined these features ot be most important 15
-    #mportant_features = ['ST.INT.ARVL', 'BX.KLT.DINV.WD.GD.ZS', 'IC.REG.PROC', 'TX.VAL.TECH.CD',
-    #                      'BG.GSR.NFSV.GD.ZS', 'SL.GDP.PCAP.EM.KD', 'IC.WRH.DURS', 'IC.IMP.COST.CD',
-    #                      'IC.LGL.CRED.XQ', 'IC.EXP.COST.CD', 'NE.CON.PETC.ZS', 'IC.IMP.DURS',
-    #                      'IQ.WEF.PORT.XQ', 'IC.REG.DURS']
+    if dependant_categorical == 'Num.Starbucks.Stores.Categorical1':
+        important_features = ['ST.INT.ARVL', 'BX.KLT.DINV.WD.GD.ZS', 'IC.REG.PROC', 'TX.VAL.TECH.CD',
+                              'BG.GSR.NFSV.GD.ZS', 'SL.GDP.PCAP.EM.KD', 'IC.WRH.DURS', 'IC.IMP.COST.CD',
+                              'IC.LGL.CRED.XQ', 'IC.EXP.COST.CD', 'NE.CON.PETC.ZS', 'IC.IMP.DURS',
+                              'IQ.WEF.PORT.XQ', 'IC.REG.DURS']
+    else:
+        important_features = find_important_features(df, dependant_categorical, num_important)
+                                  
     
     
     #now get things ready by arranging the data in test/train splits     

@@ -155,9 +155,9 @@ def run_t_test(df):
     result = stats.ttest_ind(a = df_vh, b = df_row, equal_var = False)
     glob.log.info(result)
     if result.pvalue < T_TEST_ALPHA:
-        glob.log.info('Null hypothesis for %s rejected because p value is of %f is less than 0.95' %('ST.INT.ARVL.Categorical', result.pvalue))
+        glob.log.info('Null hypothesis for %s rejected because p value is of %f is less than the t-test alpha value of %f' %('ST.INT.ARVL.Categorical', result.pvalue, T_TEST_ALPHA))
     else:
-        glob.log.info('Null hypothesis for %s accepted because p value is of %f is greater than equal to 0.95' %('ST.INT.ARVL.Categorical', result.pvalue))
+        glob.log.info('Null hypothesis for %s accepted because p value is of %f is less than the t-test alpha value of %f' %('ST.INT.ARVL.Categorical', result.pvalue, T_TEST_ALPHA))
     #store t-test results in a file
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.REGRESSION_DIR, glob.T_TEST_RESULT) 
     f = open(fname, 'w')

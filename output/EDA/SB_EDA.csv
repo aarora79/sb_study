@@ -1,9 +1,9 @@
 feature,mean,median,mode,stddev
-brand,0,0,Starbucks:24716,0
-city,0,0,上海市:496,0
-country,0,0,US:13479,0
-ownership_type,0,0,CO:11782,0
-timezone,0,0,Eastern Standard Time:5459,0
-continent,0,0,North America:15554,0
-on_airport,0,0,False:24629,0
-eodb_category,0,0,VH:15545,0
+brand,0,0,Starbucks:24733,0
+city,0,0,上海市:498,0
+country,0,0,US:13486,0
+ownership_type,0,0,CO:11777,0
+timezone,0,0,Eastern Standard Time:5460,0
+continent,0,0,North America:15568,0
+on_airport,0,0,False:24641,0
+eodb_category,0,0,VH:15549,0

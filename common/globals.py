@@ -72,6 +72,7 @@ COMBINED_HISTOGRAM = 'Combined_hist.png'
 COMBINED_R = 'Combined_r.csv'
 COMBINED_DS_W_LABELS = 'WDI_SB_w_labels.csv'
 T_TEST_RESULT = 't_test_results.csv'
+COMBINED_PREDICTED = 'WDI_SB_predicted.csv'
 
 CLUSTERING_DIR= 'clustering'
 CLASSIFICATION_DIR = 'classification'
