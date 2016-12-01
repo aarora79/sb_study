@@ -76,7 +76,7 @@ def get_timeseries(df, dir_name, scope, scope_label, scope_list):
     
     dft['date']  = dates
     dft['count'] = counts
-    fname = os.path.join(dir_name, glob.TSA_ALL_STOREs)
+    fname = os.path.join(dir_name, scope_label + '_timeseries.csv')
     dft.to_csv(fname, index=False)
     dft = dft.set_index('date')
     return dft, dates
@@ -177,6 +177,9 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     fname = os.path.join(dir_name, 'orig_with_predicted_values.png')
     plt.savefig(fname)
     plt.close('all')
+    
+    fname = os.path.join(dir_name, scope_label + '_timeseries_w_predictions.csv')
+    predictions_ARIMA.to_csv(fname, index_label='date', header=True)
     
 def run():
     glob.log.info('about to begin additional analysis...')
