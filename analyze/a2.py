@@ -116,7 +116,7 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     fig = plt.figure()  
     plt.plot(ts_log_diff)
     plt.plot(results_ARIMA.fittedvalues, color='red')
-    plt.title('RSS: %.4f'% sum((results_ARIMA.fittedvalues-ts_log_diff)**2))
+    plt.title('RSS: %.4f'% sum((results_ARIMA.fittedvalues-ts_log_diff[1:])**2))
     fname = os.path.join(dir_name, 'log_diff_and_fitted_values.png')
     plt.savefig(fname)
     
