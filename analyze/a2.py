@@ -171,7 +171,8 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     ax=plt.gca()
     plt.plot(ts, label='Actual')
     plt.ylabel('Number of stores')
-    ax = predictions_ARIMA.plot(ax=ax, style='r--', label='Predicted');
+    ax = predictions_ARIMA[:original_len_of_ts].plot(ax=ax, style='r--', label='Fitted');
+    ax = predictions_ARIMA[original_len_of_ts-1:].plot(ax=ax, style='g--', label='Predicted');
     plt.title('Forecasted number of stores')
     ax.legend()
     fname = os.path.join(dir_name, 'orig_with_predicted_values.png')
