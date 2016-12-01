@@ -151,7 +151,8 @@ def get_prediction_country_list(df, df_WB, features, dependant_categorical):
     return predictions
     
 def predict(df, df_WB, features, dependant_categorical):
-    glob.log.info('ready to predict categorical vaariables....................')
+    glob.log.info('ready to predict categorical variables....................')
+    glob.log.info('doing predictions for countries with enough data ..for which there are no Starbucks yet')
     
     predictions = get_prediction_country_list(df, df_WB, features, dependant_categorical)
     
@@ -175,8 +176,9 @@ def predict(df, df_WB, features, dependant_categorical):
     
     #convert to a df and store the output in a csv file
     df_temp = pd.DataFrame(predictions)
-    fname = os.path.join(glob.OUTPUT_DIR_NAME, dependant_categorical + '_predictions.csv')
-    df_temp.to_csv(fname)    
+    df_temp.sort_values(by=dependant_categorical, inplace=True)
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.CLASSIFICATION_DIR, dependant_categorical + '_predictions.csv')
+    df_temp.to_csv(fname, index=False)    
     
 def run(df, df_WB):
     glob.log.info('=============== Begin Classifier ===================')

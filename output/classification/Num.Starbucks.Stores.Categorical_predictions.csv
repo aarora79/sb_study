@@ -1,0 +1,55 @@
+Num.Starbucks.Stores.Categorical,country_codes,names
+H,1W,World
+H,XC,Euro area
+H,XF,IBRD only
+H,Z7,Europe & Central Asia
+H,T7,Europe & Central Asia (IDA & IBRD countries)
+H,XJ,Latin America & Caribbean (excluding high income)
+H,T2,Latin America & the Caribbean (IDA & IBRD countries)
+H,EC,Ecuador
+H,XH,IDA blend
+H,XT,Upper middle income
+L,BF,Burkina Faso
+L,UG,Uganda
+L,PY,Paraguay
+L,MN,Mongolia
+M,LV,Latvia
+M,DO,Dominican Republic
+M,HK,"Hong Kong SAR, China"
+M,DZ,Algeria
+M,IT,Italy
+M,EE,Estonia
+M,AM,Armenia
+M,LK,Sri Lanka
+M,MU,Mauritius
+M,HR,Croatia
+M,MD,Moldova
+M,GY,Guyana
+M,GE,Georgia
+M,BJ,Benin
+M,AL,Albania
+M,MK,"Macedonia, FYR"
+M,ZQ,Middle East & North Africa
+M,LT,Lithuania
+M,ME,Montenegro
+M,XU,North America
+M,NP,Nepal
+M,UA,Ukraine
+M,B8,Central Europe and the Baltics
+M,RW,Rwanda
+M,JM,Jamaica
+M,SI,Slovenia
+VH,XD,High income
+VH,OE,OECD members
+VH,EU,European Union
+VL,HN,Honduras
+VL,SL,Sierra Leone
+VL,SR,Suriname
+VL,IS,Iceland
+VL,MZ,Mozambique
+VL,TZ,Tanzania
+VL,7E,Europe & Central Asia (excluding high income)
+VL,IL,Israel
+VL,UY,Uruguay
+VL,NI,Nicaragua
+VL,BA,Bosnia and Herzegovina

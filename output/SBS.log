@@ -1,7 +1,281 @@
-11-30 02:32:29,SBS,main.py:100,INFO, -------------------------------------------------------------------------
-11-30 02:32:29,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
-11-30 02:32:29,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
-11-30 02:32:29,SBS,main.py:103,INFO, -------------------------------------------------------------------------
-11-30 02:32:29,SBS,main.py:156,INFO, Begin SB visualizations, logs available on console and in .\output\SBS.log
-11-30 02:32:29,SBS,visualize.py:39,INFO, about to begin making visualizations...
-11-30 02:32:59,SBS,locations.py:89,INFO, creation visualization for starbucks locations around the world...
+11-30 21:13:20,SBS,main.py:100,INFO, -------------------------------------------------------------------------
+11-30 21:13:20,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
+11-30 21:13:20,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
+11-30 21:13:20,SBS,main.py:103,INFO, -------------------------------------------------------------------------
+11-30 21:13:20,SBS,main.py:144,INFO, Begin SB analysis, logs available on console and in .\output\SBS.log
+11-30 21:13:20,SBS,analyze.py:216,INFO, Begin SB + WB data analysis..
+11-30 21:13:20,SBS,analyze.py:217,INFO, run analysis...
+11-30 21:13:20,SBS,analyze.py:115,INFO, combining datasets...
+11-30 21:13:20,SBS,utils.py:285,INFO, data quality score for dataset is 61.209150
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.TAX.METG is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.TOTL.SP.FE.NE.ZS is only 63.888889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, VC.PKP.TOTL.UN is only 1.388889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.GOV.DURS.ZS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EG.ELC.ACCS.UR.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.BUS.NDNS.ZS is only 54.166667 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EN.URB.LCTY.UR.ZS is only 87.500000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.TOTL.SP.MA.NE.ZS is only 63.888889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.ELC.DURS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.TLF.ACTI.1524.NE.ZS is only 59.722222 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SI.POV.GINI is only 16.666667 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SI.POV.2DAY is only 18.055556 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.TAX.OTHR.CP.ZS is only 83.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, FB.ATM.TOTL.P5 is only 86.111111 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.UEM.NEET.ZS is only 36.111111 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EG.ELC.RNEW.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.TAX.GIFT.ZS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EN.ATM.PM25.MC.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EG.ELC.ACCS.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.CUS.DURS.EX is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, AG.LND.TOTL.RU.K2 is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.MPYR.ZS is only 37.500000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.SELF.ZS is only 38.888889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.ISV.IFRM.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.1524.SP.FE.NE.ZS is only 55.555556 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, CM.MKT.TRAD.CD is only 72.222222 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.TLF.PART.ZS is only 48.611111 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, WP15163_4.1 is only 34.722222 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, DT.ODA.ODAT.PC.ZS is only 37.500000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.FRM.ISOC.ZS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EN.CLC.MDAT.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.EMP.WORK.ZS is only 38.888889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, WP_time_01.1 is only 86.111111 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.IND.EMPL.ZS is only 54.166667 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EN.POP.SLUM.UR.ZS is only 29.166667 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SE.ADT.LITR.ZS is only 65.277778 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, FI.RES.TOTL.DT.ZS is only 37.500000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, CM.MKT.TRAD.GD.ZS is only 72.222222 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, SL.SRV.EMPL.ZS is only 54.166667 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, AG.LND.TOTL.UR.K2 is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, ST.INT.RCPT.XP.ZS is only 87.500000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, LP.LPI.OVRL.XQ is only 88.888889 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.FRM.BRIB.ZS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.FRM.DURS is only 8.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.TAX.LABR.CP.ZS is only 83.333333 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, IC.ELC.OUTG is only 6.944444 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, EN.ATM.CO2E.EG.ZS is only 0.000000 full, dropping it...
+11-30 21:13:20,SBS,analyze.py:140,INFO, DT.DOD.PVLX.GN.ZS is only 33.333333 full, dropping it...
+11-30 21:13:20,SBS,utils.py:285,INFO, data quality score for dataset is 99.812312
+11-30 21:13:21,SBS,analyze.py:80,INFO, bins for ST.INT.ARVL.Categorical ->
+11-30 21:13:21,SBS,analyze.py:81,INFO, [1346000.0, 2378600.0, 10011400.000000002, 16429600.000000004]
+11-30 21:13:21,SBS,analyze.py:86,INFO, bins for SP.POP.TOTL.Categorical ->
+11-30 21:13:21,SBS,analyze.py:87,INFO, [1184778.8, 4511572.7999999998, 19078689.800000004, 66474354.400000006]
+11-30 21:13:21,SBS,analyze.py:92,INFO, bins for Num.Starbucks.Stores.Categorical ->
+11-30 21:13:21,SBS,analyze.py:93,INFO, [3.0, 6.2000000000000011, 41.200000000000024, 124.80000000000001]
+11-30 21:13:21,SBS,analyze.py:99,INFO, bins for Starbucks.Store.Density.Categorical ->
+11-30 21:13:21,SBS,analyze.py:100,INFO, [0.034466814348924631, 0.074087236773397708, 0.34526638666801812, 1.1364500233401638]
+11-30 21:13:21,SBS,analyze.py:232,INFO, writing the combined WB and SB dataset to a file
+11-30 21:13:21,SBS,analyze.py:233,INFO,    country_code  IT.NET.USER.P2  SP.POP.TOTL  IC.REG.PROC  IC.LGL.CRED.XQ  \
+0            BE       85.052900   11285721.0     3.000000        4.000000   
+8            TT       69.198471    1360088.0     7.000000        7.000000   
+11           OM       74.174166    4490541.0     5.000000        1.000000   
+12           AW       88.661227     103889.0     6.489706        5.573529   
+13           LU       97.334100     569676.0     6.000000        3.000000   
+
+                   name  SP.URB.TOTL.IN.ZS  NY.GNP.PCAP.CD  IC.WRH.DURS  \
+0               Belgium             97.858    44360.000000   212.000000   
+8   Trinidad and Tobago              8.445    18600.000000   253.000000   
+11                 Oman             77.641    16920.000000   157.000000   
+12                Aruba             41.528    25603.030303   169.304412   
+13           Luxembourg             90.160    77000.000000   157.000000   
+
+    IC.TAX.TOTL.CP.ZS       ...        SP.POP.TOTL.Categorical  \
+0           58.400000       ...                              M   
+8           32.200000       ...                              L   
+11          22.900000       ...                              L   
+12          40.336765       ...                             VL   
+13          20.100000       ...                             VL   
+
+    Num.Starbucks.Stores  Num.Starbucks.Stores.Categorical  \
+0                     19                                 M   
+8                      1                                VL   
+11                    12                                 M   
+12                     3                                VL   
+13                     2                                VL   
+
+    Starbucks.Store.Density  Starbucks.Store.Density.Categorical  \
+0                  0.168354                                    M   
+8                  0.073525                                    L   
+11                 0.267228                                    M   
+12                 2.887697                                   VH   
+13                 0.351077                                    H   
+
+    Num.Starbucks.Stores.On.Airports  Exists.In.Multiple.Cities  \
+0                                  3                       True   
+8                                  0                      False   
+11                                 0                       True   
+12                                 0                       True   
+13                                 1                       True   
+
+    Ownership.Type.Mixed      continent  MultipleBrands  
+0                  False         Europe           False  
+8                  False  North America           False  
+11                 False           Asia           False  
+12                 False  South America           False  
+13                 False         Europe           False  
+
+[5 rows x 48 columns]
+11-30 21:13:21,SBS,utils.py:265,INFO, Calculating r for combined dataset
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for Num.Starbucks.Stores and IT.NET.USER.P2 is 0.028446
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for Num.Starbucks.Stores and ST.INT.ARVL is 0.521229
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for Num.Starbucks.Stores and SP.POP.TOTL is 0.263139
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for IT.NET.USER.P2 and ST.INT.ARVL is 0.087930
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for IT.NET.USER.P2 and SP.POP.TOTL is -0.324875
+11-30 21:13:21,SBS,utils.py:274,INFO, Pearson coeff(r) for ST.INT.ARVL and SP.POP.TOTL is 0.311971
+11-30 21:13:24,SBS,analyze.py:203,INFO, country_code is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, name is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, Ease.Of.Doing.Business is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, ST.INT.ARVL.Categorical is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, SP.POP.TOTL.Categorical is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, Num.Starbucks.Stores.Categorical is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, Starbucks.Store.Density.Categorical is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, Exists.In.Multiple.Cities is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, Ownership.Type.Mixed is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, continent is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:203,INFO, MultipleBrands is not a numeric feature, ignoring
+11-30 21:13:24,SBS,analyze.py:206,INFO, making scatter plots for Num.Starbucks.Stores w.r.t to all WDI indicators...(could take a minute)
+11-30 21:13:29,SBS,clustering.py:41,INFO, doing PCA on the combined dataset...
+11-30 21:13:29,SBS,clustering.py:51,INFO, country_code is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, name is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, Ease.Of.Doing.Business is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, ST.INT.ARVL.Categorical is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, SP.POP.TOTL.Categorical is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, Num.Starbucks.Stores.Categorical is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, Starbucks.Store.Density.Categorical is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, Exists.In.Multiple.Cities is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, Ownership.Type.Mixed is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, continent is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:51,INFO, MultipleBrands is not a numeric feature, ignoring for PCA
+11-30 21:13:29,SBS,clustering.py:90,INFO, ====== printing results for kmeans ======
+11-30 21:13:29,SBS,clustering.py:91,INFO, ====== centroids ======
+11-30 21:13:29,SBS,clustering.py:93,INFO, [[-2.80206272 -0.06786412  0.0939523 ]
+ [ 4.40208107 -1.36230143  0.74182355]
+ [ 0.54616331  0.30398482  0.44384393]
+ [ 2.38324128  3.93159159 -3.64656363]
+ [-4.33958701 -7.64746441 -5.1376506 ]]
+11-30 21:13:29,SBS,clustering.py:94,INFO, ====== labels ======
+11-30 21:13:29,SBS,clustering.py:95,INFO, [0 3 2 2 0 1 1 2 2 1 0 0 2 1 0 0 4 2 0 2 0 0 0 2 1 0 0 1 0 0 0 0 0 2 2 1 2
+ 0 1 3 2 1 0 0 0 2 1 2 3 0 0 1 0 2 2 1 2 2 2 0 2 2 3 3 2 2 0 0 2 1 2 0]
+11-30 21:13:29,SBS,clustering.py:96,INFO, =========================================
+11-30 21:13:29,SBS,clustering.py:115,INFO, 77 77 77 77
+11-30 21:13:30,SBS,clustering.py:152,INFO, ====== printing results for DBSCAN ======
+11-30 21:13:30,SBS,clustering.py:153,INFO, ====== core_samples ======
+11-30 21:13:30,SBS,clustering.py:154,INFO, [False False False  True False False False False False False False False
+ False False False False False False False False False  True  True  True
+ False False  True False  True False False  True False False False False
+ False False False False False False False False False  True False False
+ False  True False False False  True False False  True False False False
+ False False False False  True False  True False  True False  True False]
+11-30 21:13:30,SBS,clustering.py:155,INFO, ====== labels ======
+11-30 21:13:30,SBS,clustering.py:156,INFO, [ 1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1  2  1  1  0 -1
+  0  1 -1  1  2 -1  2 -1 -1  0 -1 -1 -1 -1 -1 -1 -1  2 -1 -1  0 -1 -1 -1  1
+  1 -1 -1  0 -1 -1  0 -1 -1  1 -1  0 -1 -1  0 -1  1 -1  0 -1  0 -1]
+11-30 21:13:30,SBS,clustering.py:157,INFO, Counter({-1: 47, 0: 11, 1: 10, 2: 4})
+11-30 21:13:30,SBS,clustering.py:159,INFO, =========================================
+11-30 21:13:30,SBS,clustering.py:182,INFO, ====== printing results for Hierarchical Agglomerative Clustering ======
+11-30 21:13:30,SBS,clustering.py:183,INFO, ====== labels ======
+11-30 21:13:30,SBS,clustering.py:184,INFO, [0 1 0 4 0 2 2 4 4 1 0 0 4 3 0 0 3 0 0 1 0 0 0 4 2 4 0 2 0 0 0 0 0 0 4 2 4
+ 0 2 1 4 2 0 0 0 4 2 0 1 0 0 2 0 4 4 2 4 2 4 0 1 4 1 1 4 4 0 0 4 2 4 0]
+11-30 21:13:30,SBS,clustering.py:185,INFO, Counter({0: 31, 4: 19, 2: 12, 1: 8, 3: 2})
+11-30 21:13:30,SBS,clustering.py:187,INFO, =========================================
+11-30 21:13:30,SBS,assoc_rule_mining.py:123,INFO, =============== Begin Association Rules Mining ===================
+11-30 21:13:30,SBS,assoc_rule_mining.py:124,INFO, mining association rules...
+11-30 21:13:30,SBS,assoc_rule_mining.py:36,INFO, mining association rules for Num.Starbucks.Stores.Categorical and ST.INT.ARVL.Categorical
+11-30 21:13:30,SBS,assoc_rule_mining.py:62,INFO, written all association rules with 2 features to .\output\association_rules\association_rules_2_features.csv
+11-30 21:13:30,SBS,assoc_rule_mining.py:95,INFO, mining association rules for 3 features SP.POP.TOTL.Categorical,ST.INT.ARVL.Categorical -> Num.Starbucks.Stores.Categorical
+11-30 21:13:30,SBS,assoc_rule_mining.py:120,INFO, written all association rules with 3 features to .\output\association_rules\association_rules_3_features.csv
+11-30 21:13:30,SBS,assoc_rule_mining.py:132,INFO, =============== End Association Rules Mining ===================
+11-30 21:13:30,SBS,analyze.py:164,INFO, Ttest_indResult(statistic=1.452938373842231, pvalue=0.1682454074578657)
+11-30 21:13:30,SBS,analyze.py:166,INFO, Null hypothesis for ST.INT.ARVL.Categorical rejected because p value is of 0.168245 is less than the t-test alpha value of 0.200000
+11-30 21:13:30,SBS,regression.py:167,INFO, =============== Begin Regression ===================
+11-30 21:13:30,SBS,regression.py:29,INFO, [Linear regression] Coefficients:
+11-30 21:13:30,SBS,regression.py:30,INFO, [[  5.04626607e-05]]
+11-30 21:13:30,SBS,regression.py:34,INFO, [Linear regression] Mean squared error: 1882879.90
+11-30 21:13:30,SBS,regression.py:36,INFO, [Linear regression] Variance score: 0.27
+11-30 21:13:30,SBS,regression.py:73,INFO, [Polynomial regression(degree=3)] Mean squared error: 1740665.65
+11-30 21:13:30,SBS,regression.py:75,INFO, [Polynomial regression(degree=3)] Variance score: 0.33
+11-30 21:13:30,SBS,regression.py:106,INFO, [Multivariate Linear regression] Coefficients:
+11-30 21:13:30,SBS,regression.py:107,INFO, [[  4.36818256e-05   2.00586227e-09   4.65380479e-07]]
+11-30 21:13:30,SBS,regression.py:111,INFO, [Multivariate Linear regression] Mean squared error: 1843475.76
+11-30 21:13:30,SBS,regression.py:113,INFO, [Multivariate Linear regression] Variance score: 0.29
+11-30 21:13:30,SBS,regression.py:139,INFO, [Polynomial Multivariate regression(degree=3)] Mean squared error: 26149.03
+11-30 21:13:30,SBS,regression.py:141,INFO, [Polynomial Multivariate regression(degree=3)] Variance score: 0.99
+11-30 21:13:30,SBS,regression.py:153,INFO, count of countries with no Starbucks = 192
+11-30 21:13:30,SBS,regression.py:156,INFO, length of dataframe after dropping na...84
+11-30 21:13:30,SBS,regression.py:182,INFO, =============== End Regression ===================
+11-30 21:13:30,SBS,classification.py:184,INFO, =============== Begin Classifier ===================
+11-30 21:13:39,SBS,classification.py:93,INFO, ------------- Results for Num.Starbucks.Stores.Categorical-------------
+11-30 21:13:39,SBS,classification.py:94,INFO, KNN: 0.543333 (0.185622)
+CART: 0.430000 (0.184059)
+NB: 0.530000 (0.233548)
+SVM-rbf: 0.440000 (0.256385)
+RandomForests: 0.600000 (0.142984)
+
+11-30 21:13:39,SBS,classification.py:95,INFO, -----------------------------------------
+11-30 21:13:39,SBS,classification.py:154,INFO, ready to predict categorical variables....................
+11-30 21:13:39,SBS,classification.py:155,INFO, doing predictions for countries with enough data ..for which there are no Starbucks yet
+11-30 21:13:40,SBS,utils.py:295,INFO, country_code is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, name is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, Ease.Of.Doing.Business is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, ST.INT.ARVL.Categorical is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, SP.POP.TOTL.Categorical is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, Num.Starbucks.Stores.Categorical is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, Starbucks.Store.Density.Categorical is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, Exists.In.Multiple.Cities is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, Ownership.Type.Mixed is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, continent is not a numeric feature, ignoring
+11-30 21:13:40,SBS,utils.py:295,INFO, MultipleBrands is not a numeric feature, ignoring
+11-30 21:13:40,SBS,classification.py:59,INFO, feature names to be used  -> 
+11-30 21:13:40,SBS,classification.py:60,INFO, [ 4 27 29 18 28]
+11-30 21:13:40,SBS,classification.py:61,INFO, feature name, importance for predicted feature Starbucks.Store.Density.Categorical
+11-30 21:13:40,SBS,classification.py:63,INFO, SP.URB.TOTL.IN.ZS 0.056683
+11-30 21:13:40,SBS,classification.py:63,INFO, IC.BUS.DISC.XQ 0.047031
+11-30 21:13:40,SBS,classification.py:63,INFO, FP.CPI.TOTL.ZG 0.043608
+11-30 21:13:40,SBS,classification.py:63,INFO, SL.GDP.PCAP.EM.KD 0.041838
+11-30 21:13:40,SBS,classification.py:63,INFO, NE.CON.PRVT.KD.ZG 0.041629
+11-30 21:13:49,SBS,classification.py:93,INFO, ------------- Results for Starbucks.Store.Density.Categorical-------------
+11-30 21:13:49,SBS,classification.py:94,INFO, KNN: 0.320000 (0.231517)
+CART: 0.373333 (0.169181)
+NB: 0.390000 (0.215536)
+SVM-rbf: 0.356667 (0.154236)
+RandomForests: 0.463333 (0.244245)
+
+11-30 21:13:49,SBS,classification.py:95,INFO, -----------------------------------------
+11-30 21:13:49,SBS,utils.py:295,INFO, country_code is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, name is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, Ease.Of.Doing.Business is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, ST.INT.ARVL.Categorical is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, SP.POP.TOTL.Categorical is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, Num.Starbucks.Stores.Categorical is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, Starbucks.Store.Density.Categorical is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, Exists.In.Multiple.Cities is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, Ownership.Type.Mixed is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, continent is not a numeric feature, ignoring
+11-30 21:13:49,SBS,utils.py:295,INFO, MultipleBrands is not a numeric feature, ignoring
+11-30 21:13:49,SBS,classification.py:59,INFO, feature names to be used  -> 
+11-30 21:13:49,SBS,classification.py:60,INFO, [11 14  1 24  5 15 22  3 32  8 25 20 27 18  4]
+11-30 21:13:49,SBS,classification.py:61,INFO, feature name, importance for predicted feature Ownership.Type.Mixed
+11-30 21:13:49,SBS,classification.py:63,INFO, IQ.WEF.CUST.XQ 0.099983
+11-30 21:13:49,SBS,classification.py:63,INFO, ST.INT.ARVL 0.095661
+11-30 21:13:49,SBS,classification.py:63,INFO, SP.POP.TOTL 0.059754
+11-30 21:13:49,SBS,classification.py:63,INFO, TX.VAL.TECH.CD 0.055985
+11-30 21:13:49,SBS,classification.py:63,INFO, NY.GNP.PCAP.CD 0.050084
+11-30 21:13:49,SBS,classification.py:63,INFO, IC.BUS.EASE.XQ 0.049076
+11-30 21:13:49,SBS,classification.py:63,INFO, TX.VAL.OTHR.ZS.WT 0.048779
+11-30 21:13:49,SBS,classification.py:63,INFO, IC.LGL.CRED.XQ 0.038398
+11-30 21:13:49,SBS,classification.py:63,INFO, IC.IMP.COST.CD 0.036372
+11-30 21:13:49,SBS,classification.py:63,INFO, IC.ELC.TIME 0.033424
+11-30 21:13:49,SBS,classification.py:63,INFO, SH.STA.ACSN.UR 0.031719
+11-30 21:13:49,SBS,classification.py:63,INFO, SP.URB.GROW 0.030543
+11-30 21:13:49,SBS,classification.py:63,INFO, IC.BUS.DISC.XQ 0.030078
+11-30 21:13:49,SBS,classification.py:63,INFO, SL.GDP.PCAP.EM.KD 0.028374
+11-30 21:13:49,SBS,classification.py:63,INFO, SP.URB.TOTL.IN.ZS 0.027386
+11-30 21:13:58,SBS,classification.py:93,INFO, ------------- Results for Ownership.Type.Mixed-------------
+11-30 21:13:58,SBS,classification.py:94,INFO, KNN: 0.893333 (0.156205)
+CART: 0.806667 (0.156915)
+NB: 0.843333 (0.190351)
+SVM-rbf: 0.860000 (0.147422)
+RandomForests: 0.876667 (0.110604)
+
+11-30 21:13:58,SBS,classification.py:95,INFO, -----------------------------------------
+11-30 21:13:58,SBS,classification.py:195,INFO, =============== End Classifier ===================
