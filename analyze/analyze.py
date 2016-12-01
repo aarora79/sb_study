@@ -77,19 +77,27 @@ def add_derived_features(df, df_SB):
     #all set to add the new columns
     #add categorical fields for international tourist arrival
     bins = get_bins(df['ST.INT.ARVL'], QUANTILES_FOR_BINNING)
+    glob.log.info('bins for ST.INT.ARVL.Categorical ->')
+    glob.log.info(bins)
     df['ST.INT.ARVL.Categorical'] = [get_bin_category(n, bins, BIN_CATEGORY_NAMES) for n in df['ST.INT.ARVL']]
            
     #add a categorical field for population      
     bins = get_bins(df['SP.POP.TOTL'], QUANTILES_FOR_BINNING)
+    glob.log.info('bins for SP.POP.TOTL.Categorical ->')
+    glob.log.info(bins)
     df['SP.POP.TOTL.Categorical'] = [get_bin_category(n, bins, BIN_CATEGORY_NAMES) for n in df['SP.POP.TOTL']]
         
     df['Num.Starbucks.Stores']             = num_sb_total
     bins = get_bins(df['Num.Starbucks.Stores'], QUANTILES_FOR_BINNING)
+    glob.log.info('bins for Num.Starbucks.Stores.Categorical ->')
+    glob.log.info(bins)
     df['Num.Starbucks.Stores.Categorical'] = [get_bin_category(n, bins, BIN_CATEGORY_NAMES) for n in df['Num.Starbucks.Stores']]
     
     #SBSD -> Starbucks store density i.e. number of Starbucks store per 100,000 people    
     df['Starbucks.Store.Density'] = (df['Num.Starbucks.Stores']*POPULATION_MULTIPLIER_FOR_STORE_DENSITY)/df['SP.POP.TOTL']    
     bins = get_bins(df['Starbucks.Store.Density'], QUANTILES_FOR_BINNING)
+    glob.log.info('bins for Starbucks.Store.Density.Categorical ->')
+    glob.log.info(bins)
     df['Starbucks.Store.Density.Categorical'] = [get_bin_category(n, bins, BIN_CATEGORY_NAMES) for n in df['Starbucks.Store.Density']]
     
     df['Num.Starbucks.Stores.On.Airports'] = num_sb_on_airports
@@ -211,6 +219,11 @@ def run():
     
     df,dqs2 = clean_combined_dataset(df)
     
+    #also clean the WB dataset, would be used for predictions
+    #df_WB,dqs_WB = clean_combined_dataset(df_WB)
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, 'WDI_cleaned_dataset.csv')
+    df_WB.to_csv(fname)
+    
     #add derived features from SB dataset
     df = add_derived_features(df, df_SB)
     
@@ -243,5 +256,5 @@ def run():
     regression.run(df)
     
     #classification and done...
-    classification.run(df)
+    classification.run(df, df_WB)
     

@@ -73,6 +73,9 @@ COMBINED_R = 'Combined_r.csv'
 COMBINED_DS_W_LABELS = 'WDI_SB_w_labels.csv'
 T_TEST_RESULT = 't_test_results.csv'
 COMBINED_PREDICTED = 'WDI_SB_predicted.csv'
+US_COUNTIES_STARBUCKS_STORES = 'us_counties_starbucks_stores.csv'
+US_COUNTIES_STARBUCKS_STORES_HMAP = 'us_counties_starbucks_stores.html'
+STARBUCKS_BUBBLE_CHART = 'starbucks_bubble_chart.png'
 
 CLUSTERING_DIR= 'clustering'
 CLASSIFICATION_DIR = 'classification'
@@ -80,8 +83,15 @@ ASSOCIATON_DIR = 'association_rules'
 REGRESSION_DIR = 'regression'
 SCATTER_DIR = 'scatter'
 EDA_DIR = 'EDA'
+VIS_DIR = 'visualizations'
+TSA_DIR = 'TSA'
+
+TSA_ALL_STOREs = 'timeseries_all.csv'
 
 ASSOCIATION_RULES_2_FEATURES = 'association_rules_2_features.csv'
 ASSOCIATION_RULES_2_FEATURES_AFTER_FILTERING = 'association_rules_2_features___FILTER_STRING__.csv'
 ASSOCIATION_RULES_3_FEATURES = 'association_rules_3_features.csv'
 ASSOCIATION_RULES_3_FEATURES_AFTER_FILTERING = 'association_rules_3_features___FILTER_STRING__.csv'
+
+#visualizations
+LOCATIONS='locations.html'

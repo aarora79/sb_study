@@ -9,6 +9,8 @@ from common import utils
 from wb import wb
 from sb import sb
 from analyze import analyze
+from analyze import a1,a2
+from visualize import visualize,bubble,sb_by_counties
 
 ID_RS = 'Invalid_Data_Raw_Score'
 ID_AS = 'Invalid_Data_Adjusted_Score'
@@ -84,11 +86,9 @@ def create_features():
     glob.sb['df'] = sb.create_features(glob.sb['df'])    
     
 def visualize_data():
-    #visualize WB data
-    wb.visualize_data(glob.wb['df'])
+    #invoke the visualization module
+    visualize.draw()
     
-    #visualize SB data
-    sb.visualize_data(glob.sb['df'])
 def do_eda():
     #EDA for WB data
     wb.do_eda(glob.wb['df'])
@@ -116,7 +116,7 @@ def main(argv):
     
     #separate dir for association, clustering, classification
     for d in [glob.ASSOCIATON_DIR, glob.CLUSTERING_DIR, glob.CLASSIFICATION_DIR, glob.REGRESSION_DIR,
-              glob.DQS_DIR, glob.SCATTER_DIR, glob.EDA_DIR]:
+              glob.DQS_DIR, glob.SCATTER_DIR, glob.EDA_DIR, glob.VIS_DIR, glob.TSA_DIR]:
         result_dir = os.path.join(glob.OUTPUT_DIR_NAME, d)
         try:
             #create if not present
@@ -143,6 +143,18 @@ def main(argv):
         if mode == '-a':
             glob.log.info('Begin SB analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
             analyze.run()
+            sys.exit(0) ## all done
+        if mode == '-a1':
+            glob.log.info('Begin SB additional analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
+            a1.run()
+            sys.exit(0) ## all done    
+        if mode == '-a2':
+            glob.log.info('Begin SB additional analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
+            a2.run()
+            sys.exit(0) ## all done   
+        else:    
+            glob.log.info('Begin SB visualizations, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
+            visualize_data()
             sys.exit(0) ## all done
     
     glob.log.info('Begin SB study, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
