@@ -1,29 +1,11 @@
-12-01 01:42:00,SBS,main.py:100,INFO, -------------------------------------------------------------------------
-12-01 01:42:00,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
-12-01 01:42:00,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
-12-01 01:42:00,SBS,main.py:103,INFO, -------------------------------------------------------------------------
-12-01 01:42:00,SBS,main.py:152,INFO, Begin SB additional analysis, logs available on console and in .\output\SBS.log
-12-01 01:42:00,SBS,a2.py:186,INFO, about to begin additional analysis...
-12-01 01:42:00,SBS,a2.py:30,INFO, scope is all so no filtering needed....
-12-01 01:42:01,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-11-08 05:00:00
-12-01 01:42:01,SBS,a2.py:67,INFO, reached end of timeseries data at year=2017, month=1
-12-01 01:42:02,SBS,a2.py:32,INFO, scope is continent...
-12-01 01:42:02,SBS,a2.py:33,INFO, ['Africa']
-12-01 01:42:02,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-09-27 04:00:00
-12-01 01:42:02,SBS,a2.py:67,INFO, reached end of timeseries data at year=2016, month=11
-12-01 01:42:04,SBS,a2.py:40,INFO, scope is US states...
-12-01 01:42:04,SBS,a2.py:41,INFO, ['NY']
-12-01 01:42:04,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-10-25 04:00:00
-12-01 01:42:04,SBS,a2.py:67,INFO, reached end of timeseries data at year=2016, month=12
-12-01 01:42:06,SBS,a2.py:36,INFO, scope is countries...
-12-01 01:42:06,SBS,a2.py:37,INFO, ['IN']
-12-01 01:42:06,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-11-04 04:00:00
-12-01 01:42:06,SBS,a2.py:67,INFO, reached end of timeseries data at year=2017, month=1
-12-01 01:42:08,SBS,a2.py:36,INFO, scope is countries...
-12-01 01:42:08,SBS,a2.py:37,INFO, ['GB']
-12-01 01:42:08,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-11-02 04:00:00
-12-01 01:42:08,SBS,a2.py:67,INFO, reached end of timeseries data at year=2017, month=1
-12-01 01:42:09,SBS,a2.py:36,INFO, scope is countries...
-12-01 01:42:09,SBS,a2.py:37,INFO, ['US', 'CN']
-12-01 01:42:09,SBS,a2.py:53,INFO, start date: 2013-12-08 22:41:59, final date 2016-11-08 05:00:00
-12-01 01:42:09,SBS,a2.py:67,INFO, reached end of timeseries data at year=2017, month=1
+12-02 00:29:50,SBS,main.py:100,INFO, -------------------------------------------------------------------------
+12-02 00:29:50,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
+12-02 00:29:50,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
+12-02 00:29:50,SBS,main.py:103,INFO, -------------------------------------------------------------------------
+12-02 00:29:50,SBS,main.py:148,INFO, Begin SB additional analysis, logs available on console and in .\output\SBS.log
+12-02 00:29:50,SBS,a1.py:153,INFO, about to begin additional analysis...
+12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (New York, 231)
+12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (London, 195)
+12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Dubai, 75)
+12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Seoul, 234)
+12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Toronto, 191)

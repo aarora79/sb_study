@@ -49,60 +49,81 @@ def draw_ecdf(df, country):
     fname = os.path.join(dname, 'stores_ecdf.png')
     plt.savefig(fname)
 
-def draw_combined_hist(df, countries)    :
+def draw_combined_hist(df, countries, country_names, winsorize=False):
     #make a combined histogram    
     plt.cla()    
     plt.figure(1, figsize=(5, 3))   
     
-    TRIM = 0.05
-    m = 0    
+    TRIM = 0.05 if winsorize == True else 0.0
+    m = 0   
+    #get the max value amongsts all series that we are going to plot
     for c in countries:
         x = df[c].dropna().values
         x=mstats.winsorize(x,(0, TRIM))
         if max(x) > m:
-            m = max(x)        
+            m = max(x)      
+    #we have the max value, now plot each series, bins are decided based on max
+    i = 0        
     for c in countries:
         x = df[c].dropna().values
         x=mstats.winsorize(x,(0, TRIM))
         bins = np.linspace(0, m, m)   
-        plt.hist(x, bins, alpha=0.5, label=c)
+        plt.hist(x, bins, alpha=0.5, label=country_names[i])
+        i += 1
     
     plt.legend(loc='upper right')
-    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', 'hist.png')
+    name = 'hist.png' if winsorize == False else 'winsorized_hist.png'
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', name)
     plt.savefig(fname)
-    plt.show()
+    #plt.show()
 
-def draw_combined_boxplot(df):
+def draw_combined_boxplot(df, countries, country_names, winsorize=False):
     plt.cla()
     # Create the boxplot
-    plt.figure(1, figsize=(9, 6))
-    TRIM=95
-    #for c in df.columns[1:]:
-    #    x = df[c].dropna().values
-    #    p = np.percentile(x, TRIM)
-    #    df[df[c] > p]=p
-        #df[c] = mstats.winsorize(x,(0, TRIM))
-    #    print(df[c])
-    ax = df.boxplot(return_type='axes')
-    #ax.set_yscale("log", nonposy='clip')
+    plt.figure(1, figsize=(5, 6))
+    TRIM = 0.05 if winsorize == True else 0.0
+    data = []
+    for c in countries:
+        x = df[c].dropna().values
+        x = mstats.winsorize(x,(0, TRIM))
+        data.append(x)
+    plt.boxplot(data, labels=country_names, whis='range') 
+    #plt.xticks(rotation = 45)
+
     # Save the figure
-    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', 'boxplot.png')
+    name = 'boxplot.png' if winsorize == False else 'winsorized_boxplot.png'
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', name)
     plt.savefig(fname)        
            
 def explore_distribution_across_countries(df):
-    countries = ['US', 'CN', 'CA', 'IN', 'GB', 'JP', 'FR']
-    
+    countries = ['US', 'GB', 'AE', 'KW', 'KR', 'CA']
+                 
+    country_names = ['United States',        'United Kingdom', 
+                     'UAE', 'Kuwait', 
+                     'Republic of Korea',    'Canada']   
+                     
     df3 = pd.DataFrame(columns=countries)
     
     #kind of kludgy way of doing this but ok..
     max_l = 0
+    city_w_max_stores = []
+    count_in_city_w_max_stores = []
     for country in countries:
         df2 = df[df['country'] == country]
         distribution = df2['city'].value_counts()
         l = len(distribution)
         if l > max_l:
-            max_l = l
-            
+            max_l = l   
+        glob.log.info('Max number of stores (%s, %d)' %(distribution.index[0], distribution.ix[0])) 
+        city_w_max_stores.append(distribution.index[0])
+        count_in_city_w_max_stores.append(distribution.ix[0])
+    df_temp = pd.DataFrame(columns = ['country', 'city_with_most_starbucks_stores', 'count_in_city_with_most_stores'])
+    df_temp['country'] = country_names
+    df_temp['city_with_most_starbucks_stores'] = city_w_max_stores
+    df_temp['count_in_city_with_most_stores'] = count_in_city_w_max_stores
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', 'cities_withmost_stores.csv')
+    df_temp.to_csv(fname, index=False)    
+    
     for country in countries:
         df2 = df[df['country'] == country]
         distribution = df2['city'].value_counts()
@@ -120,11 +141,13 @@ def explore_distribution_across_countries(df):
         draw_hist(df3, country)
         draw_ecdf(df3, country)       
     
-    #combined histogram
-    draw_combined_hist(df3, countries)
+    #combined histogram, followed by a winsorized version
+    draw_combined_hist(df3, countries, country_names)
+    draw_combined_hist(df3, countries, country_names, True)
     
-    #make a boxplot
-    draw_combined_boxplot(df3)
+    #make a boxplot,followed by a winsorized version
+    draw_combined_boxplot(df3, countries, country_names)
+    draw_combined_boxplot(df3, countries, country_names, True)
            
 def run():
     glob.log.info('about to begin additional analysis...')
