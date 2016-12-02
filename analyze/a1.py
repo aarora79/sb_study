@@ -122,7 +122,7 @@ def explore_distribution_across_countries(df):
     df_temp['city_with_most_starbucks_stores'] = city_w_max_stores
     df_temp['count_in_city_with_most_stores'] = count_in_city_w_max_stores
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', 'cities_withmost_stores.csv')
-    df_temp.to_csv(fname, index=False)    
+    df_temp.to_csv(fname, index=False, encoding='utf-8')    
     
     for country in countries:
         df2 = df[df['country'] == country]

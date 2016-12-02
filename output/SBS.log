@@ -1,11 +1,11 @@
-12-02 00:29:50,SBS,main.py:100,INFO, -------------------------------------------------------------------------
-12-02 00:29:50,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
-12-02 00:29:50,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
-12-02 00:29:50,SBS,main.py:103,INFO, -------------------------------------------------------------------------
-12-02 00:29:50,SBS,main.py:148,INFO, Begin SB additional analysis, logs available on console and in .\output\SBS.log
-12-02 00:29:50,SBS,a1.py:153,INFO, about to begin additional analysis...
-12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (New York, 231)
-12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (London, 195)
-12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Dubai, 75)
-12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Seoul, 234)
-12-02 00:29:50,SBS,a1.py:117,INFO, Max number of stores (Toronto, 191)
+12-02 00:41:12,SBS,main.py:100,INFO, -------------------------------------------------------------------------
+12-02 00:41:12,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
+12-02 00:41:12,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
+12-02 00:41:12,SBS,main.py:103,INFO, -------------------------------------------------------------------------
+12-02 00:41:12,SBS,main.py:148,INFO, Begin SB additional analysis, logs available on console and in .\output\SBS.log
+12-02 00:41:12,SBS,a1.py:153,INFO, about to begin additional analysis...
+12-02 00:41:12,SBS,a1.py:117,INFO, Max number of stores (New York, 231)
+12-02 00:41:12,SBS,a1.py:117,INFO, Max number of stores (London, 195)
+12-02 00:41:12,SBS,a1.py:117,INFO, Max number of stores (Dubai, 75)
+12-02 00:41:12,SBS,a1.py:117,INFO, Max number of stores (Seoul, 234)
+12-02 00:41:12,SBS,a1.py:117,INFO, Max number of stores (Toronto, 191)
