@@ -1,11 +1,9 @@
-12-02 01:55:50,SBS,main.py:100,INFO, -------------------------------------------------------------------------
-12-02 01:55:50,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
-12-02 01:55:50,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
-12-02 01:55:50,SBS,main.py:103,INFO, -------------------------------------------------------------------------
-12-02 01:55:50,SBS,main.py:148,INFO, Begin SB additional analysis, logs available on console and in .\output\SBS.log
-12-02 01:55:50,SBS,a1.py:159,INFO, about to begin additional analysis...
-12-02 01:55:50,SBS,a1.py:121,INFO, Max number of stores (New York, 231)
-12-02 01:55:50,SBS,a1.py:121,INFO, Max number of stores (London, 195)
-12-02 01:55:50,SBS,a1.py:121,INFO, Max number of stores (Dubai, 75)
-12-02 01:55:50,SBS,a1.py:121,INFO, Max number of stores (Seoul, 234)
-12-02 01:55:51,SBS,a1.py:121,INFO, Max number of stores (Toronto, 191)
+12-02 02:44:14,SBS,main.py:100,INFO, -------------------------------------------------------------------------
+12-02 02:44:14,SBS,main.py:101,INFO, SBS v0.1: A data science tale about a coffee company
+12-02 02:44:14,SBS,main.py:102,INFO, Author: Amit Arora, aa1603@georgetown.edu
+12-02 02:44:14,SBS,main.py:103,INFO, -------------------------------------------------------------------------
+12-02 02:44:14,SBS,main.py:156,INFO, Begin SB visualizations, logs available on console and in .\output\SBS.log
+12-02 02:44:14,SBS,visualize.py:39,INFO, about to begin making visualizations...
+12-02 02:44:18,SBS,locations.py:89,INFO, creation visualization for starbucks locations around the world...
+12-02 02:44:24,SBS,locations.py:66,ERROR, Exception while reading lat/long value: malformed node or string: nan
+12-02 02:44:30,SBS,bubble.py:33,INFO, about to begin visualization for bubble chart...

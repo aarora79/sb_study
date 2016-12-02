@@ -203,7 +203,8 @@ def draw(df_combined, df_sb):
     ("city", "@city")
     ])
     
-    layout = row(plot, widgetbox(eodb_slider, tourists_slider, tech_exports_slider, inet_users_slider))
+    #layout = row(plot, widgetbox(eodb_slider, tourists_slider, tech_exports_slider, inet_users_slider))
+    layout = row(plot)
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.VIS_DIR, glob.LOCATIONS)
     output_file(fname)
     show(layout)
