@@ -21,6 +21,7 @@ def draw_hist(df, country):
     #plt.hist(x, bins, alpha=0.5, label=[country])
     sns.distplot(x, bins=bins, kde=False, fit=stats.erlang);
     plt.legend(loc='upper right')
+    plt.title('Histogram for distribution of Starbucks stores across cities in ' + country)
     
     dname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', country)
     os.makedirs(dname, exist_ok=True)
@@ -44,6 +45,7 @@ def draw_ecdf(df, country):
     #ax.set_yticks(minor_ticks, minor=True)  
     major_ticks = np.arange(0, max(x), BIN_SIZE*5)  
     ax.set_xticks(major_ticks)   
+    plt.title('ECDF for distribution of Starbucks stores across cities in ' + country)
     dname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', country)
     os.makedirs(dname, exist_ok=True)
     fname = os.path.join(dname, 'stores_ecdf.png')
@@ -72,6 +74,7 @@ def draw_combined_hist(df, countries, country_names, winsorize=False):
         i += 1
     
     plt.legend(loc='upper right')
+    plt.title('Histogram for distribution of Starbucks stores\n across cities in a country')
     name = 'hist.png' if winsorize == False else 'winsorized_hist.png'
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', name)
     plt.savefig(fname)
@@ -88,6 +91,7 @@ def draw_combined_boxplot(df, countries, country_names, winsorize=False):
         x = mstats.winsorize(x,(0, TRIM))
         data.append(x)
     plt.boxplot(data, labels=country_names, whis='range') 
+    plt.title('Boxplot for distribution of Starbucks stores\n across cities in a country')
     #plt.xticks(rotation = 45)
 
     # Save the figure
