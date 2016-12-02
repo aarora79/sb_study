@@ -13,7 +13,7 @@ from scipy import stats
 
 BIN_SIZE = 5
 
-def draw_hist(df, country):
+def draw_hist(df, country, name):
     plt.cla()
     plt.figure(1, figsize=(9, 6))
     x = df[country].dropna().values   
@@ -21,14 +21,14 @@ def draw_hist(df, country):
     #plt.hist(x, bins, alpha=0.5, label=[country])
     sns.distplot(x, bins=bins, kde=False, fit=stats.erlang);
     plt.legend(loc='upper right')
-    plt.title('Histogram for distribution of Starbucks stores across cities in ' + country)
+    plt.title('Histogram for distribution of Starbucks stores across cities in ' + name)
     
     dname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', country)
     os.makedirs(dname, exist_ok=True)
     fname = os.path.join(dname, 'stores_hist.png')
     plt.savefig(fname)
 
-def draw_ecdf(df, country):    
+def draw_ecdf(df, country, name):    
     #ecdf  
     # Create a figure instance
     plt.cla()
@@ -45,7 +45,7 @@ def draw_ecdf(df, country):
     #ax.set_yticks(minor_ticks, minor=True)  
     major_ticks = np.arange(0, max(x), BIN_SIZE*5)  
     ax.set_xticks(major_ticks)   
-    plt.title('ECDF for distribution of Starbucks stores across cities in ' + country)
+    plt.title('ECDF for distribution of Starbucks stores across cities in ' + name)
     dname = os.path.join(glob.OUTPUT_DIR_NAME, glob.EDA_DIR, 'more', country)
     os.makedirs(dname, exist_ok=True)
     fname = os.path.join(dname, 'stores_ecdf.png')
@@ -141,9 +141,11 @@ def explore_distribution_across_countries(df):
         
     #now make plots for individual countries  and combinations  
     #histogram
+    i = 0    
     for country in countries:        
-        draw_hist(df3, country)
-        draw_ecdf(df3, country)       
+        draw_hist(df3, country, country_names[i])
+        draw_ecdf(df3, country, country_names[i])    
+        i += 1
     
     #combined histogram, followed by a winsorized version
     draw_combined_hist(df3, countries, country_names)
