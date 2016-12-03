@@ -14,7 +14,145 @@ sb.set_style('darkgrid')
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
 from dateutil.relativedelta import relativedelta
+import plotly.plotly as py
+from plotly.graph_objs import *
+
+THRESHOLD_FOR_TOTAL_NUMBER_OF_STORES = 25
+
+def plot_sparklines_for_countries_with_greatest_increase(countries, df):
+
+    data = []
+    i = 1
+    for c in countries:
+        dft, dates, overall_change, overall_change_in_percentage = get_timeseries(df, None, 'countries', None, [c], create_csv=False)
+        #glob.log.info(dft.columns)        
+        xa='x' + str(i)
+        ya='y' + str(i)
+        print('country %s' %(c))
+        i += 1
+        trace = Scatter(
+        x=dates,
+        y=dft['count'],
+        fill='tozeroy',
+        line=Line(
+            shape='spline',
+            smoothing=1.3,
+            width=0.5
+        ),
+        mode='lines',
+        name=c,
+        visible=True,
+        xaxis=xa,
+        yaxis=ya,
+        )
+        data.append(trace)
+    layout = Layout(
+    autosize=False,
+    height=1000,
+    showlegend=False,
+    title='<b>Timeseries for number Starbucks stores 2013-2016</b><br>Countries with the maximum percentage increase in number Starbucks stores. <br><i>Only includes countries with at least 25 stores at the end of 2016.</i>',
+    width=800)
+    
+    i = 1
+    #xdomain and ydomain are divisions in which the plots will be displayed, we are 
+    #looking for a 3x5 display
+    xdomain = [[0, 0.25], [0.33, 0.6], [0.7, 1.0]]  
+    ydomain = [[0.8, 0.95], [0.6, 0.75], [0.4, 0.55], [0.2, 0.35], [0.0, 0.15]]
+    
+    #we would like replace the country code with the name, this mapping is available in WDI dataset
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.WDI_CSV_FILE_AFTER_CLEANING)
+    df_WB=pd.read_csv(fname)
+    df_WB = df_WB.set_index('country_code')
+    
+    for c in countries:
+        xa = 'xaxis' + str(i)
+        ya = 'yaxis' + str(i)
         
+        layout[xa] = dict(XAxis(
+        anchor='y' + str(i),
+        autorange=True,
+        domain=xdomain[(i%3) - 1],
+        mirror=False,
+        showgrid=True,
+        showline=True,
+        showticklabels=False,
+        showticksuffix='none',
+        title=df_WB.ix[c]['name'],
+        zeroline=False
+        ))
+        
+        layout[ya] = dict(YAxis(
+        #autorange=False,
+        #range=[0,3000],
+        autorange=True,
+        anchor='x' + str(i),
+        domain=ydomain[(i%5) - 1],
+        mirror=False,
+        showgrid=True,
+        showline=True,
+        showticklabels=True,
+        showticksuffix='last',
+        title='',
+        type='linear',
+        zeroline=False
+        ))
+        #move to the next
+        i += 1
+        
+    fig = Figure(data=data, layout=layout)
+    plot_url = py.plot(fig)
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'countries_w_greatest_increase_in_starbucks_stores.png')
+    py.image.save_as(fig, filename=fname)
+    
+def plot_bar_graph_for_abs_increase(df):
+    import plotly.plotly as py
+    import plotly.graph_objs as go
+    df1 = df.sort_values(by='overall_change', ascending=False)
+    trace1 = go.Bar(
+        x=df1['country'],
+        y=df1['overall_change'],
+        name='Overall change in number of stores',
+        marker=dict(
+            #color='rgb(55, 83, 109)'
+            color='rgb(49,130,189)'
+        )
+    )    
+    data = [trace1]
+    layout = go.Layout(
+        title='Overall increase in number of Starbucks stores from 2013 to 2016',
+        xaxis=dict(
+            tickfont=dict(
+                size=14,
+                color='rgb(107, 107, 107)'
+            )
+        ),
+        yaxis=dict(
+            title='Increase in number of Starbucks stores',
+            titlefont=dict(
+                size=16,
+                color='rgb(107, 107, 107)'
+            ),
+            tickfont=dict(
+                size=14,
+                color='rgb(107, 107, 107)'
+            )
+        ),
+        legend=dict(
+            x=0,
+            y=1.0,
+            bgcolor='rgba(255, 255, 255, 0)',
+            bordercolor='rgba(255, 255, 255, 0)'
+        ),
+        barmode='group',
+        bargap=0.15,
+        bargroupgap=0.1
+    )
+    
+    fig = go.Figure(data=data, layout=layout)
+    py.plot(fig, filename='style-bar') 
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'bar_graph_for_increase_in_number_of_starbucks_stores.png')
+    py.image.save_as(fig, filename=fname)       
+    
 def get_next_month_and_year(prev_date):
     next_month = prev_date.month + 1  
     next_year  = prev_date.year
@@ -23,7 +161,7 @@ def get_next_month_and_year(prev_date):
         next_year += 1     
     return next_year, next_month
 
-def get_timeseries(df, dir_name, scope, scope_label, scope_list):
+def get_timeseries(df, dir_name, scope, scope_label, scope_list, create_csv=True):
         #countries = ['US', 'CN', 'CA', 'IN', 'GB', 'JP', 'FR']
     #create a new df based on scope
     if scope == 'all':
@@ -76,10 +214,18 @@ def get_timeseries(df, dir_name, scope, scope_label, scope_list):
     
     dft['date']  = dates
     dft['count'] = counts
-    fname = os.path.join(dir_name, scope_label + '_timeseries.csv')
-    dft.to_csv(fname, index=False)
+    #add a rate parameter as well to see what is the rate of increase (or decrease) with time
+    dft['change'] = dft['count'] - dft['count'].shift()
+    overall_change = sum(dft['change'].dropna())
+    
+    #2nd order differences, to see if there is an increase in the differences themselves
+    dft['change_in_percentage'] = 100*((dft['count'] - dft['count'].shift())/(dft['count']))
+    overall_change_in_percentage = sum(dft['change_in_percentage'].dropna())
+    if create_csv == True:
+        fname = os.path.join(dir_name, scope_label + '_timeseries.csv')
+        dft.to_csv(fname, index=False)
     dft = dft.set_index('date')
-    return dft, dates
+    return dft, dates, overall_change, overall_change_in_percentage
     
 def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):    
     #create subdir for the scope so that all plots can be kept in that directory
@@ -87,7 +233,7 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     os.makedirs(dir_name, exist_ok = True)
     
     #et the series to be analyzed    
-    dft, dates = get_timeseries(df, dir_name, scope, scope_label, scope_list)
+    dft, dates, overall_change, overall_change_in_percentage = get_timeseries(df, dir_name, scope, scope_label, scope_list)
     
     #plot it 
     dft['count'].plot(figsize=(16, 12))  
@@ -201,6 +347,39 @@ def run():
     explore_timeseries(df_sb, 'countries', 'GB', ['GB']) #the U.K.
     
     explore_timeseries(df_sb, 'countries', 'US_CN', ['US', 'CN']) #the U.S. and China combined
+    
+    #do another analysis, find the countries with highest rate of increase
+    dir_name = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'all')
+    os.makedirs(dir_name, exist_ok = True)
+    rate_of_growth = { 'country':[], 'total': [], 'overall_change':[], 'overall_change_in_percentage':[]}
+    for c in df_sb['country'].unique():
+        
+        dft, dates, overall_change, overall_change_in_percentage = get_timeseries(df_sb, None, 'countries', None, [c], create_csv=False)
+        fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'all', c + '_timeseries.csv')    
+        dft.to_csv(fname)
+        rate_of_growth['country'].append(c)
+        rate_of_growth['total'].append(dft['count'][dft.index[-1]])
+        rate_of_growth['overall_change'].append(overall_change)   
+        rate_of_growth['overall_change_in_percentage'].append(overall_change_in_percentage)
+        glob.log.info('overall change in number of stores in %s is %d' %(c, overall_change))
+    df1 = pd.DataFrame(rate_of_growth)
+    df1.sort_values(by='total', inplace=True, ascending=False)
+    fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'rate_of_growth.csv')
+    df1.to_csv(fname, index=False)
+    
+    plot_bar_graph_for_abs_increase(df1)
+    
+    #now find the top 10 countries which had more than 25 stores at the end of 2016 and
+    #had the highest cumulative rate of increase..we can then plot the timeseries for those in
+    #one chart
+    df2 = df1[df1['total'] > THRESHOLD_FOR_TOTAL_NUMBER_OF_STORES]
+    #now sort this by overall_change_in_percentage
+    df2.sort_values(by='overall_change_in_percentage', inplace=True, ascending=False)
+    #take the top 15
+    glob.log.info(df2.head(15))
+    countries_with_greatest_percentage_increase = list(df2['country'][df2.index[:15]])
+    #plot countries with greater percentage increase
+    plot_sparklines_for_countries_with_greatest_increase(countries_with_greatest_percentage_increase, df_sb)
     
 if __name__ == "__main__":
     # execute only if run as a script

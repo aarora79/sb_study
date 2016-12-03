@@ -17,6 +17,7 @@
    sodipodi:docname="USA_Counties - Copy.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:docbase="C:\Users\svg">
+  <g transform="scale(1.5)"> 
   <metadata
      id="metadata3671">
     <rdf:RDF>
@@ -15792,4 +15793,5 @@
      d="M 154.32743,294.71587 L 154.32743,330.08203 L 177.47618,351.01798 M 0.64999998,250.99045 L 111.24502,250.99045 L 154.32743,294.71587 L 209.62724,294.71587 L 243.70736,329.43901 L 243.70736,351.01798"
      style="fill:none;stroke:#a9a9a9;stroke-width:1.29999995"
      id="separator" />
+     </g>
 </svg>

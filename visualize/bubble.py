@@ -12,10 +12,10 @@ import scipy.stats.mstats as mstats
 from common import globals as glob
 
 def get_bubble_size(num_stores):
-    size = 4
+    size = 4 #anything <= 5 stores is 4 pixels in size
     if num_stores > 10000:
         size = 60
-    if num_stores > 2000:
+    elif num_stores > 2000:
         size = 30
     elif num_stores > 1000:
         size = 24
@@ -60,7 +60,7 @@ def draw():
             marker=dict(
                 symbol='circle',
                 sizemode='diameter',
-                sizeref=1,
+                #sizeref=1,
                 size=df['size'][df['continent'] == continent],
                 color = color[ci],
                 line=dict(

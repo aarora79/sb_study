@@ -104,7 +104,7 @@ def draw(df_combined, df_sb):
     plot = GMapPlot(
         x_range=DataRange1d(), y_range=DataRange1d(),
         map_options=map_options,
-        api_key=API_KEY, plot_width=1000, plot_height=500,
+        api_key=API_KEY, plot_width=1050, plot_height=510,
         #tools="pan,wheel_zoom,box_zoom,reset,hover,save"
     )
     plot.title.text = "Starbucks locations around the world"
