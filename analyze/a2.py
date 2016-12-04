@@ -50,7 +50,7 @@ def plot_sparklines_for_countries_with_greatest_increase(countries, df):
     autosize=False,
     height=1000,
     showlegend=False,
-    title='<b>Timeseries for number Starbucks stores 2013-2016</b><br>Countries with the maximum percentage increase in number Starbucks stores. <br><i>Only includes countries with at least 25 stores at the end of 2016.</i>',
+    title='<b>Timeseries for number Starbucks stores 2013-2016</b><br>Countries with the maximum percentage increase in number Starbucks stores. <br><i>Only includes countries with at least 25 stores as of November 2016.</i>',
     width=800)
     
     i = 1
@@ -73,11 +73,16 @@ def plot_sparklines_for_countries_with_greatest_increase(countries, df):
         autorange=True,
         domain=xdomain[(i%3) - 1],
         mirror=False,
-        showgrid=True,
-        showline=True,
+        showgrid=False,
+        showline=False,
         showticklabels=False,
         showticksuffix='none',
         title=df_WB.ix[c]['name'],
+        titlefont=dict(
+            #family='Courier New, monospace',
+            size=12,
+            #color='#7f7f7f'
+        ),
         zeroline=False
         ))
         
@@ -88,8 +93,8 @@ def plot_sparklines_for_countries_with_greatest_increase(countries, df):
         anchor='x' + str(i),
         domain=ydomain[(i%5) - 1],
         mirror=False,
-        showgrid=True,
-        showline=True,
+        showgrid=False,
+        showline=False,
         showticklabels=True,
         showticksuffix='last',
         title='',
@@ -100,7 +105,7 @@ def plot_sparklines_for_countries_with_greatest_increase(countries, df):
         i += 1
         
     fig = Figure(data=data, layout=layout)
-    plot_url = py.plot(fig)
+    plot_url = py.plot(fig, filename='sparklines')
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'countries_w_greatest_increase_in_starbucks_stores.png')
     py.image.save_as(fig, filename=fname)
     
