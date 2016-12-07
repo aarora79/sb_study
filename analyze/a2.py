@@ -241,6 +241,7 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     dft, dates, overall_change, overall_change_in_percentage = get_timeseries(df, dir_name, scope, scope_label, scope_list)
     
     #plot it 
+    print(dft['count'])
     dft['count'].plot(figsize=(16, 12))  
     fname = os.path.join(dir_name, 'num_stores.png')
     plt.savefig(fname)
@@ -335,6 +336,7 @@ def explore_timeseries(df, scope, scope_label, scope_list, order=(2, 1, 2)):
     
 def run():
     glob.log.info('about to begin additional analysis...')
+    plt.close('all')
 
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.SB_CSV_FILE_W_FEATURES)
     df_sb = pd.read_csv(fname)
@@ -351,7 +353,7 @@ def run():
     
     explore_timeseries(df_sb, 'countries', 'GB', ['GB']) #the U.K.
     
-    explore_timeseries(df_sb, 'countries', 'US_CN', ['US', 'CN']) #the U.S. and China combined
+    explore_timeseries(df_sb, 'countries', 'US_CN', ['US', 'CN'],(1, 1, 0)) #the U.S. and China combined
     
     #do another analysis, find the countries with highest rate of increase
     dir_name = os.path.join(glob.OUTPUT_DIR_NAME, glob.TSA_DIR, 'all')

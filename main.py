@@ -143,6 +143,8 @@ def main(argv):
         if mode == '-a':
             glob.log.info('Begin SB analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
             analyze.run()
+            a1.run()
+            a2.run()
             sys.exit(0) ## all done
         if mode == '-a1':
             glob.log.info('Begin SB additional analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
