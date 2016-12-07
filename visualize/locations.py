@@ -203,6 +203,7 @@ def draw(df_combined, df_sb):
     ("city", "@city")
     ])
     
+    #uncomment the following line to show sliders
     #layout = row(plot, widgetbox(eodb_slider, tourists_slider, tech_exports_slider, inet_users_slider))
     layout = row(plot)
     fname = os.path.join(glob.OUTPUT_DIR_NAME, glob.VIS_DIR, glob.LOCATIONS)

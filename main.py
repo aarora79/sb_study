@@ -180,6 +180,8 @@ def main(argv):
     #Step 3: analyze
     glob.log.info('Begin SB analysis, logs available on console and in %s' %(os.path.join(glob.OUTPUT_DIR_NAME, 'SBS.log')))
     analyze.run()
+    a1.run()
+    a2.run()
         
     #Step 3.5: TBD
     visualize_data()    

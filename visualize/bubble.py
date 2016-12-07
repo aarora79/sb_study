@@ -95,6 +95,9 @@ def draw():
         ),
         paper_bgcolor='rgb(243, 243, 243)',
         plot_bgcolor='rgb(243, 243, 243)',
+        #autosize=False,
+        #width=500,
+        #height=500,
     )
     
     fig = go.Figure(data=data, layout=layout)
